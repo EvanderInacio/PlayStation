@@ -8,14 +8,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
-html{
-  background: var(--background);
+body{
+ background-color: var(--background);
   width: 100vw;
 }
 
 a{
   text-decoration: none;
-  
 }
 
 ul{
@@ -33,10 +32,15 @@ ul{
   --background: hsl(245, 58%, 7%);
   --title-text: hsl(0, 0%, 50%);
   --menu-color: hsla(0, 0%, 23%, 0.164);
+  --menu-color-hover: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 100%);
 }
 
-body.sun-theme{
-  --background: hsl(247, 31%, 89%);
+.sun-theme{
+  --background: hsl(0, 0%, 96%);
   --title-text: hsl(0, 0%, 50%);
-  --menu-color: hsla(0, 0%, 23%, 0.164);
+  --menu-color: hsla(0, 35%, 91%, 0.459);
+  --menu-color-hover: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 0%);
 }
+
