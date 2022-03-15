@@ -1,0 +1,42 @@
+
+
+/* =========== RESET ============ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  background: var(--background);
+  width: 100vw;
+}
+
+a{
+  text-decoration: none;
+  
+}
+
+ul{
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+/*============ VARIABLES ====================*/
+:root{
+  --background: hsl(245, 58%, 7%);
+  --title-text: hsl(0, 0%, 50%);
+  --menu-color: hsla(0, 0%, 23%, 0.164);
+}
+
+body.sun-theme{
+  --background: hsl(247, 31%, 89%);
+  --title-text: hsl(0, 0%, 50%);
+  --menu-color: hsla(0, 0%, 23%, 0.164);
+}
