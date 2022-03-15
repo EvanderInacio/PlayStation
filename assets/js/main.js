@@ -1,15 +1,25 @@
 
 // =============== MENU MOBILE ================== //
-const navMenu = document.getElementById('menu-mobile');
+const navMenu = document.getElementById('menu-mobile')
 
-function toggleMenu(){
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('active');
+function toggleMenu() {
+  const nav = document.getElementById('nav')
+  nav.classList.toggle('active')
 }
 
-
-navMenu.addEventListener('click', toggleMenu );
-
+navMenu.addEventListener('click', toggleMenu)
 
 
 // =============== DARK MODE ================== //
+const toggle = document.getElementById('btn');
+
+toggle.addEventListener('click', () =>{
+
+  if(toggle){
+    document.body.classList.toggle('sun-theme');
+  } else{
+    document.body.classList.remove('sun-theme')
+  }
+})
+
+
