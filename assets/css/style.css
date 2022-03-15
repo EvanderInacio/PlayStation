@@ -17,17 +17,16 @@ nav{
  margin: 1.6rem -1rem 1rem 1rem;
 }
 
-/*@media (max-width: 767px){
-}*/
+@media (max-width: 767px){
 nav .menu {
   position: absolute;
   height: 100%;
   width: 8.7rem;
-  
   z-index: 10;
   background: var(--menu-color);
   text-align: center;
   display: none;
+}
 }
 
 /*====== Show menu ========*/
@@ -52,11 +51,16 @@ nav .menu {
 
 .links a {
   color: var(--title-text);
- 
 }
 
 .links a:hover {
-  color: white;
+  color: var(--menu-color-hover);
+}
+
+/*====== dark-mode ========*/
+#btn{
+  cursor: pointer;
+  color: var(--title-text);
 }
 
 
@@ -65,32 +69,58 @@ nav .menu {
 
 
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
+  #nav {
+    justify-content: space-around;
+    top: 0;
+    width: 100vw;
+  }
+
+  #menu-mobile{
+    display: none;
+  }
+
+  .header #nav .menu{
+    height: 1rem;
+  }
+
   #nav {
     display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+   justify-content: space-around;
+  }
+
+  .logo{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--background);
+    margin: 1rem;
   }
   
-  .logo {
+  .logo-img{
+    width: 2rem;
+    margin: -1.3rem;
+  }
+
+  .logo-titulo{
+    display: block;
+    font-size: 1.2rem;
+    margin: 1.4rem;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  .links{
     display: flex;
-    margin: 0 1px;
+    gap: 2rem;
+    margin: .5rem;
   }
 
-  .logo-titulo {
-    color: var(--title-text);
+  .btn-dark-mode img{
+    position: relative;
+    top: -1rem;
   }
 
-  .header .nav-link {
-    display: inline-flex;
-    margin: 0 1rem;
-  }
+  
 
-  .links a {
-    color: var(--title-text);
-  }
-
-  .links a:hover {
-    color: white;
-  }
 }
