@@ -1,5 +1,6 @@
 
 
+
 /* =========== RESET ============ */
 *{
   margin: 0;
@@ -41,14 +42,14 @@ section{
 
 /*============ VARIABLES ====================*/
 :root{
-  --background: hsl(245, 58%, 7%);
-  --background-menu-mobile: hsl(246, 62%, 14%);
+  --background: hsl(0, 0%, 100%);
+  --background-menu-mobile: hsl(0, 0%, 87%);
   --menu-text: hsl(0, 0%, 50%);
-  --menu-color: hsl(0, 0%, 23%);
-  --menu-color-hover: hsl(0, 0%, 100%);
-  --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(249, 12%, 65%);
-  --buttom-color: hsl(249, 12%, 65%);
+  --menu-color: hsl(0, 35%, 91%);
+  --menu-color-hover: hsl(0, 0%, 0%);
+  --title-color: hsl(0, 0%, 1%);
+  --text-color: hsl(236, 7%, 48%);
+  --buttom-color: hsl(236, 7%, 48%);
   --buttom-color-padding: hsl(245, 59%, 42%);
 
   /*======= MARGINS =========*/
@@ -63,15 +64,15 @@ section{
 
 }
 
-.sun-theme{
-  --background: hsl(0, 0%, 96%);
-  --background-menu-mobile: hsl(0, 0%, 87%);
+.dark-theme{
+  --background: hsl(245, 58%, 7%);
+  --background-menu-mobile: hsl(246, 62%, 14%);
   --menu-text: hsl(0, 0%, 50%);
-  --menu-color: hsl(0, 35%, 91%);
-  --menu-color-hover: hsl(0, 0%, 0%);
-  --title-color: hsl(0, 0%, 1%);
-  --text-color: hsl(236, 7%, 48%);
-  --buttom-color: hsl(236, 7%, 48%);
+  --menu-color: hsl(0, 0%, 23%);
+  --menu-color-hover: hsl(0, 0%, 100%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(249, 12%, 65%);
+  --buttom-color: hsl(249, 12%, 65%);
   --buttom-color-padding: hsl(245, 59%, 42%);
 }
 
