@@ -1,0 +1,143 @@
+@import url(/assets/css/global/header.css);
+@import url(/assets/css/global/global.css);
+@import url(/assets/css/global/footer.css);
+
+
+/*=============== HOME =======================*/
+.home-container{
+  gap: 1rem;
+  padding-top: 7rem;
+}
+  
+.home-content{
+text-align: center;
+}
+
+.home-titulo{
+  color: var(--title-color);
+  margin-bottom: var(--mb-2);
+}
+
+.home-titulo span{
+  color: #362BA9;
+}
+
+.home-description{
+  color: var(--text-color);
+  margin-bottom: var(--mb-1);
+}
+
+.btn-about-more{
+  padding: var(--mb-0-5);
+  color: #ffff;
+  background: #362BA9;
+  border: 2px solid #362BA9;
+  border-radius: 6px;
+}
+
+.btn-explore{
+  color: var(--buttom-color);
+}
+
+.home-img{
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+}
+
+.controle{
+  display: none;
+}
+
+
+/*=============== MEDIA QUERS =======================*/
+@media (min-width: 768px) {
+  #nav {
+    top: 0;
+    width: 100vw;
+  }
+
+  #menu-mobile {
+    display: none;
+  }
+
+  .header #nav .menu {
+    height: 1rem;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: none;
+    margin: 1rem;
+  }
+
+  .logo-img {
+    width: 2rem;
+    margin: -1.3rem;
+  }
+
+  .logo-titulo {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1.4rem;
+    text-align: center;
+    color: var(--title-color);
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+    margin: 0.5rem;
+  }
+
+  .btn-dark-mode img {
+    position: relative;
+    top: -1rem;
+  }
+
+  /*============== HOME =======================*/
+  .home-data {
+    margin-left: 7rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .home-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-titulo {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .controller{
+    text-align: center;
+  }
+
+
+  .home-button {
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .home-img {
+    width: 30rem;
+    height: 35rem;
+    float: right;
+  }
+
+  /*.controle{
+    display: block;
+  }*/
+
+  
+}
