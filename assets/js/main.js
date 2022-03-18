@@ -16,9 +16,9 @@ const toggle = document.getElementById('btn');
 toggle.addEventListener('click', () =>{
 
   if(toggle){
-    document.body.classList.toggle('sun-theme');
+    document.body.classList.toggle('dark-theme');
   } else{
-    document.body.classList.remove('sun-theme')
+    document.body.classList.remove('dark-theme')
   }
 })
 
