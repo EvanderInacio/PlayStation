@@ -1,0 +1,65 @@
+
+
+/*=============== NAV =======================*/
+nav{
+  float: right;
+  position: fixed;
+}
+
+.logo{
+  background: var(--background-menu-mobile);
+}
+
+.logo-titulo {
+  display: none;
+} 
+
+.logo-img {
+ margin: 1.6rem -1rem 1rem 1rem;
+}
+
+@media (max-width: 767px){
+nav .menu {
+  position: absolute;
+  height: 100vh;
+  width: 8.7rem;
+  z-index: 100;
+  background: var( --background-menu-mobile) ;
+  text-align: center;
+  display: none;
+}
+}
+
+/*====== Show menu ========*/
+#nav.active .menu{
+  display: block;
+}
+
+#menu-mobile{
+  width: 2rem;
+  float: right;
+  margin: 2rem;
+}
+
+.nav-link{
+  margin: 2rem 0;
+}
+
+.links .btn-dark-mode {
+  width: 2.5rem;
+  margin: 3rem ;
+}
+
+.links a {
+  color: var(--menu-text);
+}
+
+.links a:hover {
+  color: var(--menu-color-hover);
+}
+
+/*====== dark-mode ========*/
+#btn{
+  cursor: pointer;
+  color: var(--title-text);
+}

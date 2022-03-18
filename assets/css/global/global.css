@@ -1,0 +1,78 @@
+
+
+/* =========== RESET ============ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+ background-color: var(--background);
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.main{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+section{
+  justify-content: center;
+}
+
+
+/*============ VARIABLES ====================*/
+:root{
+  --background: hsl(245, 58%, 7%);
+  --background-menu-mobile: hsl(246, 62%, 14%);
+  --menu-text: hsl(0, 0%, 50%);
+  --menu-color: hsl(0, 0%, 23%);
+  --menu-color-hover: hsl(0, 0%, 100%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(249, 12%, 65%);
+  --buttom-color: hsl(249, 12%, 65%);
+  --buttom-color-padding: hsl(245, 59%, 42%);
+
+  /*======= MARGINS =========*/
+  --mb-0-5: 0.5rem;
+  --mb-0-25: 0.25rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+}
+
+.sun-theme{
+  --background: hsl(0, 0%, 96%);
+  --background-menu-mobile: hsl(0, 0%, 87%);
+  --menu-text: hsl(0, 0%, 50%);
+  --menu-color: hsl(0, 35%, 91%);
+  --menu-color-hover: hsl(0, 0%, 0%);
+  --title-color: hsl(0, 0%, 1%);
+  --text-color: hsl(236, 7%, 48%);
+  --buttom-color: hsl(236, 7%, 48%);
+  --buttom-color-padding: hsl(245, 59%, 42%);
+}
+
+
