@@ -14,6 +14,7 @@ text-align: center;
 }
 
 .home-titulo{
+  font-size: 2rem;
   color: var(--title-color);
   margin-bottom: var(--mb-2);
 }
@@ -28,7 +29,8 @@ text-align: center;
 
 .home-description{
   color: var(--text-color);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-2);
+  text-align: center;
 }
 
 .btn-about-more{
@@ -36,21 +38,23 @@ text-align: center;
   color: #ffff;
   background: #362BA9;
   border: 2px solid #362BA9;
-  border-radius: 6px;
+  border-radius: 6px; 
 }
 
 .btn-explore{
   color: var(--buttom-color);
+  margin-left: 1rem;
 }
 
 .sony{
   position: absolute;
-  margin-left: 5rem;
+  margin-left: 4rem;
   text-align: center;
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+  z-index: -1;
 }
 
 .home-img{
@@ -74,6 +78,23 @@ text-align: center;
 
 
 /*=============== MEDIA QUERS =======================*/
+
+@media (min-width: 568px){
+  .home-titulo{
+    font-size: 4rem;
+  }
+
+  .home-description{
+    font-size: 1rem;
+  }
+  .home-img{
+    width: 20rem;
+  }
+
+
+
+
+}
 
 @media (min-width: 768px) {
   #nav {
@@ -155,9 +176,18 @@ text-align: center;
     font-size: .9rem;
   }
 
+  .btn-about-more:hover{
+    background: #5f52f1;
+    border-color: #5f52f0;
+  }
+
   .btn-explore {
     padding: 1rem;
     gap: 2rem;
+  }
+
+  .btn-explore:hover{
+    color: #3f2ff1;
   }
 
   .sony{
