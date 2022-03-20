@@ -35,8 +35,9 @@ ul{
   margin-right: 1.5rem;
 }
 
-section{
+.section{
   justify-content: center;
+  margin-bottom: 8rem;
 }
 
 
@@ -48,9 +49,19 @@ section{
   --menu-color: hsl(0, 35%, 91%);
   --menu-color-hover: hsl(0, 0%, 0%);
   --title-color: hsl(0, 0%, 1%);
-  --text-color: hsl(236, 7%, 48%);
-  --buttom-color: hsl(236, 7%, 48%);
-  --buttom-color-padding: hsl(245, 59%, 42%);
+  --text-color: hsl(236, 7%, 48%); 
+  --button-color: hsl(236, 7%, 48%);
+  --button-color-span: hsl(245, 59%, 42%);
+ 
+
+  /*======= FONTS =========*/
+  --tittle-font: 'Poppins', sans-serif;
+  --text-font: 'Roboto', sans-serif;
+
+  /*====== FONTS PESO =======*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
   /*======= MARGINS =========*/
   --mb-0-5: 0.5rem;
@@ -61,6 +72,7 @@ section{
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
+  --mb-4: 4rem;
 
 }
 
@@ -73,7 +85,7 @@ section{
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(249, 12%, 65%);
   --buttom-color: hsl(249, 12%, 65%);
-  --buttom-color-padding: hsl(245, 59%, 42%);
+  --buttom-color-span: hsl(245, 59%, 42%);
 }
 
 
