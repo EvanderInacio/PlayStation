@@ -5,6 +5,7 @@ nav{
   float: right;
   position: fixed;
   z-index: 100;
+  height: calc(1.3rem + var(--header-height));
 }
 
 .logo{
@@ -13,10 +14,11 @@ nav{
 
 .logo-titulo {
   display: none;
+  padding: 0 .8rem;
 } 
 
 .logo-img {
- margin: 1.6rem -1rem 1rem 1rem;
+ margin: 1.5rem -1.075rem 1rem 1rem;
 }
 
 @media (max-width: 767px){
@@ -63,4 +65,65 @@ nav .menu {
 #btn{
   cursor: pointer;
   color: var(--title-text);
+}
+
+
+/*============= MEDIA =============*/
+@media(min-width: 768px){
+  .section{
+    margin-bottom: 15rem;
+   }
+ 
+   #nav {
+     top: 0;
+     width: 100vw;
+     background-color: var(--background);
+     border-bottom: 1px solid var(--button-color-span);
+     z-index: 100;
+   }
+ 
+   #menu-mobile {
+     display: none;
+   }
+ 
+   .header #nav .menu {
+     height: 1rem;
+   }
+ 
+   #nav {
+     display: flex;
+     justify-content: space-around;
+   }
+ 
+   .logo {
+     display: inline-flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background: none;
+     margin: 1rem;
+   }
+ 
+   .logo-img {
+     width: 2rem;
+     margin: -1.3rem;
+   }
+ 
+   .logo-titulo {
+     display: block;
+     font-size: 1.2rem;
+     margin: 1.4rem;
+     text-align: center;
+     color: var(--title-color);
+   }
+ 
+   .links {
+     display: flex;
+     gap: 2rem;
+     margin: 0.5rem;
+   }
+ 
+   .btn-dark-mode img {
+     position: relative;
+     top: -1rem;
+   }
 }
