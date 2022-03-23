@@ -2,35 +2,62 @@
 
 /*=============== NAV =======================*/
 nav{
-  float: right;
   position: fixed;
   z-index: 100;
   height: calc(1.3rem + var(--header-height));
 }
 
 .logo{
-  background: var(--background-menu-mobile);
+  background: var(--background);
+  height: 4rem;
 }
 
-.logo-titulo {
-  display: none;
-  padding: 0 .8rem;
-} 
+.logo-titulo{
+  display: inline-flex;
+  font-size: 1.1rem;
+  color: var(--title-color);
+  margin: 1.5rem 1rem 1rem 0;
+}
 
-.logo-img {
- margin: 1.5rem -1.075rem 1rem 1rem;
+.logo-img{
+ height: -3rem;
+ margin: 0 0 0 1rem;
 }
 
 @media (max-width: 767px){
 nav .menu {
   position: absolute;
   height: 100vh;
-  width: 8.7rem;
+  width: 100vw;
   z-index: 100;
-  background: var(--background-menu-mobile) ;
+  background: var(--background);
   text-align: center;
   display: none;
 }
+
+.logo{
+  width: 100vw;
+}
+
+.logo-img{
+  width: 1.5rem;
+}
+
+.menu{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn-dark-mode{
+  text-align: center;
+  display: inline-block;
+}
+
+.menu-mobile{
+  width: 1.8rem;
+  margin-top: -1rem;
+}
+
 }
 
 /*====== Show menu ========*/
@@ -109,7 +136,7 @@ nav .menu {
    }
  
    .logo-titulo {
-     display: block;
+   
      font-size: 1.2rem;
      margin: 1.4rem;
      text-align: center;
