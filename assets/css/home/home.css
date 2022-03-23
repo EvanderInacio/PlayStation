@@ -88,9 +88,6 @@
 }
 
 /*=============== ABOUT =======================*/
-.about-content{
-  margin-top: 8rem;
-}
 
 .about-img{
   display: none;
@@ -157,6 +154,166 @@
   border-color: #5f52f0;
 }
 
+/*=============== FUNCTIONS =======================*/
+.function-title{
+  font-size: 2rem;
+  color: var(--title-color);
+  font-family: var(--font-semi-bold);
+}
+
+.function-title span{
+  color: var(--button-color-span);
+}
+
+.function-description{
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: var(--font-regular);
+  font-family: var(--text-font);
+  margin-bottom: var(--mb-2-5);
+}
+
+.function-content{
+ width: 90vw;
+ height: auto;
+ text-align: center;
+ border: 1px solid var(--card-border);
+ border-radius: 56px;
+ padding: 1rem;
+ background: var(--background-card);
+}
+
+.card-content{
+  display: grid;
+  justify-items: center;
+}
+
+.card-content h3{
+  color: var(--title-color);
+}
+
+.card{
+  text-align: center;
+  border: 1px solid var(--card-border);
+  background: var(--card-color);
+  width: 15rem;
+  padding: 3rem 2rem;
+  border-radius: 56px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.card img,
+.card h3{
+ margin-bottom: var(--mb-2-5);
+}
+
+.line-function{
+  width: 80px;
+  height: 6px;
+  background: rgb(51, 41, 160);
+  transform: matrix(0, -1, -1, 0, 0, 0, 1);
+  position: absolute;
+  left: 5rem;
+}
+
+.circle-function{
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: rgb(51, 41, 160);
+  position: absolute;
+  left: 9.5rem;
+  bottom: 2.3rem;
+}
+
+/*=============== TOP CARDS =======================*/
+.top-content-card{
+  display: grid;
+}
+
+.top-title{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--title-color);
+}
+
+.top-title span{
+  color: var(--button-color-span);
+}
+
+.top-description{
+  text-align: center;
+  margin-bottom: var(--mb-4);
+  color: var(--text-color);
+}
+
+.top-content-card{
+  justify-content: center;
+}
+
+.top-card{
+  padding-top: 3rem;
+  border: 1px solid var(--card-border);
+  background:rgb(218, 218, 218); /*radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);*/
+  width: 16rem;
+  height: 26rem;
+  border-radius: 26px;
+  margin-bottom: 25px;
+  position: relative;
+
+  text-align: center;
+}
+
+.border-top{
+  content: '';
+  position: absolute;
+  left: 2.5rem;
+  width: 10.5rem;
+  height: 10rem;
+  background: #362BA9;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.top-card h5{
+  margin-top: var(--mb-1-5);
+}
+
+.card-controle{
+  margin-top: -4rem; 
+}
+
+.estrela{
+  display: flex;
+  padding-left: 3.6rem;
+}
+
+.top-money{
+  margin-top: 2rem;
+  text-align: start;
+  padding-left: 2.5rem;
+}
+
+.cart{
+  width: 4rem;
+  height: 3rem;
+  border: 1px solid #362BA9;
+  border-radius: 5px;
+  background: #302A6F;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cart img{
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: .5rem;
+}
 /*=============== MEDIA QUERS =======================*/
 
 @media (min-width: 568px){
@@ -174,6 +331,15 @@
 
   .about-title{
     font-size: 2.5rem;
+  }
+
+  .card-content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-content-card{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
   }
 
 
@@ -323,7 +489,30 @@
     width: 26rem;
   }
 
+  /*=============== FUNCTIONS =======================*/
+  .function-title{
+    font-size: 3rem;
+  }
+
+  .card-content{
+    justify-content: center;
+  }
   
+ /*=============== TOP =======================*/
+ .top-title{
+   font-size: 3rem;
+ }
+
+  .top-content-card{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 994px) {
+
+  .card-content{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1200px){
