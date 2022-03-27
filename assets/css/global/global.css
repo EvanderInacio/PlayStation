@@ -39,6 +39,15 @@ ul{
   margin-bottom: 8rem;
 }
 
+.section-title{
+  color: var(--title-color);
+  font-family: var(--tittle-font);
+}
+
+.section-span{
+  color: var(--button-color-span);
+}
+
 span{
   color: var(--buttom-color-span);
 }
@@ -46,6 +55,7 @@ span{
 
 
 /*============ VARIABLES ====================*/
+
 :root{
   --header-height: 4.5rem;
   --background: hsl(0, 0%, 100%);
@@ -59,17 +69,30 @@ span{
   --background-card: hsla(0, 0%, 80%, 0.246);
   --card-color: hsla(0, 0%, 64%, 0.226);
   --card-border: hsl(0, 0%, 80%);  
+  --controle-color: hsl(0, 0%, 80%); 
+  --scroll-bar: hsl(0, 0%, 47%);
+  --scroll-thumb: hsl(0, 0%, 0%);
+  
  
 
   /*======= FONTS =========*/
-  --tittle-font: 'Poppins', sans-serif;
+  --title-font: 'Poppins', sans-serif;
   --text-font: 'Roboto', sans-serif;
 
+  /*====== FONTS SIZE ======*/
+  --big-font-size: 2.5rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1rem;
+  --h5-font-size: 0.875rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+  
   /*====== FONTS PESO =======*/
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
-
+  
   /*======= MARGINS =========*/
   --mb-0-5: 0.5rem;
   --mb-0-25: 0.25rem;
@@ -80,10 +103,22 @@ span{
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
   --mb-4: 4rem;
-
+  
 }
 
-.dark-theme{
+@media (min-width: 768px) {
+ :root{
+  --big-font-size: 5rem;
+  --h1-font-size: 4rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 2rem;
+  --h5-font-size: 1.2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+ }
+}
+
+.dark-theme{ 
   --background: hsl(245, 58%, 7%);
   --menu-text: hsl(0, 0%, 50%);
   --menu-color: hsl(0, 0%, 23%);
@@ -94,8 +129,27 @@ span{
   --buttom-color-span: hsl(245, 59%, 42%);
   --background-card: hsl(249, 16%, 9%);
   --card-color: hsl(222, 15%, 23%);
-  --card-border:  hsl(222, 15%, 23%);  
- 
+  --card-border:  hsl(222, 15%, 23%); 
+  --controle-color: radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);
+  --scroll-bar: hsl(0, 0%, 18%);
+  --scroll-thumb: hsl(0, 100%, 100%);
 }
+
+
+/*============ SCROLL BAR =========================*/
+
+body::-webkit-scrollbar {
+  width: 10px;             
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scroll-bar);        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb);  
+  border-radius: 1px;      
+}
+
 
 
