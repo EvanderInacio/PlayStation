@@ -1,20 +1,17 @@
-@import url(/assets/css/global/header.css);
-@import url(/assets/css/global/global.css);
-@import url(/assets/css/global/footer.css);
 
+/*======================= HOME =======================*/
 
-/*=============== HOME =======================*/
-.home-container{
+.home-container {
   gap: 1rem;
   padding-top: 5.9rem;
 }
-  
-.home-content{
+
+.home-content {
   text-align: center;
   position: relative;
 }
 
-.home-titulo{
+.home-titulo {
   font-size: 2rem;
   font-family: var(--tittle-font);
   font-weight: var(--font-semi-bold);
@@ -22,15 +19,11 @@
   margin-bottom: var(--mb-2);
 }
 
-.home-titulo span{
-  color: var(--button-color-span);
-}
-
-.circle-titulo{
+.circle-titulo {
   display: none;
 }
 
-.home-description{
+.home-description {
   font-size: 1rem;
   font-family: var(--text-font);
   font-weight: var(--font-regular);
@@ -39,25 +32,25 @@
   text-align: center;
 }
 
-.btn-about-more{
+.btn-about-more {
   padding: var(--mb-0-5);
   color: #ffff;
   background: var(--button-color-span);
   border: 2px solid var(--button-color-span);
-  border-radius: 6px; 
+  border-radius: 6px;
 }
 
-.btn-about-more:hover{
+.btn-about-more:hover {
   background: #5f52f1;
   border-color: #5f52f0;
 }
 
-.btn-explore{
+.btn-explore {
   color: var(--buttom-color);
   margin-left: 1rem;
 }
 
-.sony{
+.sony {
   position: absolute;
   margin-left: 4rem;
   text-align: center;
@@ -68,56 +61,53 @@
   z-index: -1;
 }
 
-.home-img{
+.home-img {
   margin-top: 10rem;
   justify-content: center;
   text-align: center;
   width: 200px;
 }
 
-.desktop{
+.desktop {
   display: none;
 }
 
-.ps4-img{
+.ps4-img {
   display: none;
 }
 
-.controle{
+.controle {
   display: none;
 }
 
-/*=============== ABOUT =======================*/
 
-.about-img{
+/*====================== ABOUT =======================*/
+
+.about-img {
   display: none;
 }
 
-.about-title{
+.about-title {
   font-size: 2rem;
   font-family: var(--font-semi-bold);
   color: var(--title-color);
   margin-bottom: var(--mb-1-5);
 }
 
-.about-title span{
-  color: var(--button-color-span);
-}
-
-.about-description{
+.about-description {
   color: var(--text-color);
   font-size: 1rem;
   font-weight: var(--font-regular);
   font-family: var(--text-font);
 }
 
-.about-list{
+.about-list {
   margin: var(--mb-2-5) 0;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-left: 2.5rem;
 }
 
-.about-list li{
+.about-list li {
   margin-bottom: 1rem;
   position: relative;
   color: var(--text-color);
@@ -125,47 +115,45 @@
   font-family: var(--text-font);
 }
 
-.about-list li::before{
+.about-list li::before {
   content: '';
   display: inline-block;
   position: absolute;
   left: -2rem;
-  top: .5rem;
+  top: 0.5rem;
   width: 20px;
-  height: 2px; 
+  height: 2px;
   background: var(--button-color-span);
   border-radius: 5px;
 }
 
-.button-about{
+.button-about {
   padding: var(--mb-0-5);
   background: var(--button-color-span);
   border: 2px solid var(--button-color-span);
-  border-radius: 6px; 
+  border-radius: 6px;
   display: inline-block;
 }
 
-.button-about a{
+.button-about a {
   color: #ffff;
 }
 
-.button-about:hover{
+.button-about:hover {
   background: #5f52f1;
   border-color: #5f52f0;
 }
 
-/*=============== FUNCTIONS =======================*/
-.function-title{
+
+/*====================== FUNCTIONS =======================*/
+
+.function-title {
   font-size: 2rem;
   color: var(--title-color);
   font-family: var(--font-semi-bold);
 }
 
-.function-title span{
-  color: var(--button-color-span);
-}
-
-.function-description{
+.function-description {
   color: var(--text-color);
   font-size: 1rem;
   font-weight: var(--font-regular);
@@ -173,26 +161,26 @@
   margin-bottom: var(--mb-2-5);
 }
 
-.function-content{
- width: 90vw;
- height: auto;
- text-align: center;
- border: 1px solid var(--card-border);
- border-radius: 56px;
- padding: 1rem;
- background: var(--background-card);
+.function-content {
+  width: auto;
+  height: auto;
+  text-align: center;
+  border: 1px solid var(--card-border);
+  border-radius: 56px;
+  padding: 1rem;
+  background: var(--background-card);
 }
 
-.card-content{
+.card-content {
   display: grid;
   justify-items: center;
 }
 
-.card-content h3{
+.card-content h3 {
   color: var(--title-color);
 }
 
-.card{
+.card {
   text-align: center;
   border: 1px solid var(--card-border);
   background: var(--card-color);
@@ -204,11 +192,11 @@
 }
 
 .card img,
-.card h3{
- margin-bottom: var(--mb-2-5);
+.card h3 {
+  margin-bottom: var(--mb-2-5);
 }
 
-.line-function{
+.line-function {
   width: 80px;
   height: 6px;
   background: rgb(51, 41, 160);
@@ -217,7 +205,7 @@
   left: 5rem;
 }
 
-.circle-function{
+.circle-function {
   width: 17px;
   height: 17px;
   border-radius: 50%;
@@ -227,35 +215,33 @@
   bottom: 2.3rem;
 }
 
-/*=============== TOP CARDS =======================*/
-.top-content-card{
+
+/*====================== TOP CARDS =======================*/
+
+.top-content-card {
   display: grid;
 }
 
-.top-title{
+.top-title {
   text-align: center;
   font-size: 2rem;
   color: var(--title-color);
 }
 
-.top-title span{
-  color: var(--button-color-span);
-}
-
-.top-description{
+.top-description {
   text-align: center;
   margin-bottom: var(--mb-4);
   color: var(--text-color);
 }
 
-.top-content-card{
+.top-content-card {
   justify-content: center;
 }
 
-.top-card{
+.top-card {
   padding-top: 3rem;
   border: 1px solid var(--card-border);
-  background:rgb(218, 218, 218); /*radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);*/
+  background: var(--controle-color);
   width: 16rem;
   height: 26rem;
   border-radius: 26px;
@@ -265,92 +251,196 @@
   text-align: center;
 }
 
-.border-top{
+.border-top {
   content: '';
   position: absolute;
   left: 2.5rem;
   width: 10.5rem;
   height: 10rem;
-  background: #362BA9;
+  background: #362ba9;
   z-index: -1;
   border-radius: 50%;
 }
 
-.top-card h5{
+.top-card h5 {
   margin-top: var(--mb-1-5);
 }
 
-.card-controle{
-  margin-top: -4rem; 
+.card-controle {
+  margin-top: -4rem;
 }
 
-.estrela{
+.estrela {
   display: flex;
   padding-left: 3.6rem;
 }
 
-.top-money{
+.top-money {
   margin-top: 2rem;
   text-align: start;
   padding-left: 2.5rem;
+  color: var(--text-color);
 }
 
-.cart{
+.top-card p {
+  color: var(--text-color);
+}
+
+.top-card h5 {
+  color: var(--title-color);
+}
+
+.cart {
   width: 4rem;
   height: 3rem;
-  border: 1px solid #362BA9;
+  border: 1px solid #362ba9;
   border-radius: 5px;
-  background: #302A6F;
+  background: #302a6f;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.cart img{
+.cart img {
   justify-content: center;
   align-items: center;
   width: 1.5rem;
   position: absolute;
   right: 1rem;
-  top: .5rem;
+  top: 0.5rem;
 }
+
+
+/*========= FAQ ==================*/
+.sub-title{
+  margin-top: 6rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  font-family: var(--text-font);
+  color: var(--text-color);
+  margin-bottom: -1rem;
+}
+
+.faq-title{
+  font-size: var(--h2-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+}
+
+.faq-description{
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  font-family: var(--font-regular);
+  font-family: var(--text-font);
+}
+
+.faq-content{
+  border: 2px solid var(--card-color);
+  border-radius: 25px;
+  padding: 1.5rem 0;
+}
+
+.hr-line{
+  width:90%;
+  height: 1px;
+  margin: auto;
+}
+
+.faq-page {
+  color: var(--text-color);
+  font-size: var(--h3-font-size);
+  cursor: pointer;
+  padding: 30px 0;
+  width: 85%; 
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+
+.faq-body{
+  margin: auto;
+  padding: 0 18px;
+  margin-bottom: 1rem;
+  display: none;
+  overflow: hidden;
+  font-size: var(--h5-font-size);
+  font-family: var(--font-regular);
+  font-weight: var(--text-font);
+  color: var(--text-color);
+}
+
+.faq-body p{
+  margin-bottom: var(--mb-2);
+}
+
+.faq-page:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+
 /*=============== MEDIA QUERS =======================*/
 
-@media (min-width: 568px){
-  .home-titulo{
+@media (min-width: 568px) {
+
+  /*=============== HOME ==================*/
+  .home-titulo {
     font-size: 3rem;
     font-family: var(--font-semi-bold);
   }
 
-  .home-description{
+  .home-description {
     font-size: 1rem;
   }
-  .home-img{
+  .home-img {
     width: 20rem;
   }
 
-  .about-title{
+  /*=============== ABOUT ==================*/
+  .about-title {
     font-size: 2.5rem;
   }
 
-  .card-content{
+  /*=============== FUNCTIONS ==================*/
+  .card-content {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .top-content-card{
+  /*============= TOP CARDS ===============*/
+  .top-content-card {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
 
+  /*============= FAQ ========================*/
+  .faq-content{
+    width: 95vw;
+  }
 
+  .faq-page{
+    font-size: var( --h5-font-size);
+  }
+
+  .faq-body{
+    font-size: var(--normal-font-size);
+    margin: 0 2rem;
+  }
 }
 
 @media (min-width: 768px) {
 
-  /*============== HOME =======================*/
-  .home-content{
+  /*=============== HOME ==================*/
+  .home-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .home-data {
@@ -362,15 +452,15 @@
   .home-titulo {
     font-size: 3.5rem;
     text-align: center;
-    margin-bottom: .1rem;
+    margin-bottom: 0.1rem;
   }
 
-  .controller{
+  .controller {
     margin-left: -3rem;
   }
 
-  .home-description{
-    font-size: .9rem;
+  .home-description {
+    font-size: 0.9rem;
   }
 
   .btn-explore {
@@ -378,11 +468,11 @@
     gap: 2rem;
   }
 
-  .btn-explore:hover{
+  .btn-explore:hover {
     color: var(--button-color-span);
   }
 
-  .sony{
+  .sony {
     position: absolute;
     text-align: center;
     margin-top: 4rem;
@@ -391,15 +481,15 @@
     gap: 4rem;
   }
 
-  .desktop{
+  .desktop {
     display: block;
   }
 
-  .mobile{
+  .mobile {
     display: none;
   }
 
-  .home-data-img{
+  .home-data-img {
     position: relative;
   }
 
@@ -409,7 +499,7 @@
     position: relative;
   }
 
-  .superior{
+  .superior {
     top: 10rem;
     left: -12rem;
     color: var(--text-color);
@@ -418,29 +508,29 @@
     position: absolute;
   }
 
-  .line1{  
+  .line1 {
     position: absolute;
     width: 5px;
     height: 60px;
     left: 16rem;
-    top: -.7rem;
+    top: -0.7rem;
     background: rgba(51, 41, 160, 0.582);
     transform: matrix(0, -1, -1, 0, 0, 0);
   }
 
-  .circle1{
+  .circle1 {
     content: '';
     position: absolute;
     width: 17px;
     height: 17px;
     left: 17rem;
-    top: .6rem;
+    top: 0.6rem;
     border-radius: 50%;
-    background: #362BA9;
-    box-shadow: 0px 0px 3px 1px #302A6F;
+    background: #362ba9;
+    box-shadow: 0px 0px 3px 1px #302a6f;
   }
 
-  .inferior{
+  .inferior {
     margin-left: 16rem;
     margin-top: -2rem;
     color: var(--text-color);
@@ -448,7 +538,7 @@
     position: absolute;
   }
 
-  .line2{  
+  .line2 {
     position: absolute;
     width: 5px;
     height: 150px;
@@ -458,7 +548,7 @@
     transform: matrix(0, -1, -1, 0, 0);
   }
 
-  .circle2{
+  .circle2 {
     content: '';
     position: absolute;
     width: 17px;
@@ -466,67 +556,72 @@
     left: 1.15rem;
     top: -10rem;
     border-radius: 50%;
-    background: #362BA9;
-    box-shadow: 0px 0px 3px 1px #302A6F;
+    background: #362ba9;
+    box-shadow: 0px 0px 3px 1px #302a6f;
   }
 
-  .controle{
+  .controle {
     display: block;
   }
 
- /*============== ABOUT =======================*/
-  .about-content{
+  /*=========== ABOUT ==============*/
+  .about-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-title{
+  .about-title {
     font-size: 3rem;
   }
 
-  .about-img{
+  .about-img {
     display: block;
     width: 26rem;
   }
 
-  /*=============== FUNCTIONS =======================*/
-  .function-title{
+
+  /*=========== FUNCTIONS ==============*/
+  .function-content{
+    padding: 0 5rem;
+  }
+
+  .function-title {
     font-size: 3rem;
   }
 
-  .card-content{
+  .card-content {
     justify-content: center;
+    gap: 3rem;
   }
-  
- /*=============== TOP =======================*/
- .top-title{
-   font-size: 3rem;
- }
 
-  .top-content-card{
-    grid-template-columns: repeat(3, 1fr);
+  /*============= TOP CARDS ===============*/
+  .top-title {
+    font-size: 3rem;
+  }
+
+  /*============= FAQ ========================*/
+}
+
+@media (min-width: 994px){
+  .faq-content{
+    width: 70vw;
   }
 }
 
-@media (min-width: 994px) {
+@media (min-width: 1200px) {
 
-  .card-content{
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1200px){
+  /*=============== HOME ==================*/
   .home-data {
     justify-content: flex-start;
     margin-top: 5rem;
     margin-left: -20rem;
   }
 
-  .home-titulo{
+  .home-titulo {
     font-size: 4rem;
   }
 
-  .sony{
+  .sony {
     position: absolute;
     text-align: center;
     margin-top: 4rem;
@@ -536,23 +631,22 @@
     gap: 6rem;
   }
 
-
   .home-img {
     width: 30rem;
     position: relative;
   }
 
-  .superior{
+  .superior {
     top: 12rem;
     left: -21rem;
     font-size: small;
   }
 
-  .inferior{
+  .inferior {
     font-size: small;
   }
-  
-  .line1{  
+
+  .line1 {
     width: 5px;
     height: 130px;
     left: 21rem;
@@ -561,39 +655,56 @@
     transform: matrix(0, -1, -1, 0, 0, 0);
   }
 
-  .circle1{
+  .circle1 {
     content: '';
     position: absolute;
 
     width: 17px;
     height: 17px;
     left: 25rem;
-    top: .5rem;
+    top: 0.5rem;
 
     border-radius: 50%;
-    background: #362BA9;
-    box-shadow: 0px 0px 3px 1px #302A6F;
+    background: #362ba9;
+    box-shadow: 0px 0px 3px 1px #302a6f;
   }
 
 
-  .about-title{
+  /*============= ABOUT ===============*/
+  .about-title {
     font-size: 3rem;
   }
 
-  .about-description{
+  .about-description {
     font-size: 1rem;
   }
 
-  .about-list{
+  .about-list {
     font-size: 1rem;
     font-weight: var(--font-semi-bold);
   }
 
-  .about-img{
+  .about-img {
     width: 50rem;
     margin-top: -10rem;
   }
 
- 
-}
+  /*============= FUNCTIONS ===============*/
+  .function-content{
+    padding: 0 4rem;
+  }
 
+  .card-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*============= TOP CARDS ===============*/
+  .top-content-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*============= FAQ ========================*/
+  .faq-content{
+    width: 60vw;
+  }
+}
