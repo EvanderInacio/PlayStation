@@ -105,7 +105,6 @@ nav .menu {
      top: 0;
      width: 100vw;
      background-color: var(--background);
-     border-bottom: 1px solid var(--button-color-span);
      z-index: 100;
    }
  
