@@ -63,6 +63,12 @@
     display: inline;
   }
 
+  .footer-description{
+    text-align: start;
+    overflow: hidden;
+    width: 320px;
+  }
+
   .right-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -72,7 +78,7 @@
 @media (min-width: 768px) {
   .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .footer-description {
