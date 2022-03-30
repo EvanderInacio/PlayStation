@@ -8,3 +8,5 @@
 /*=========== HOME ============*/
 @import './home/home.css';
 
+/*=========== TERMS ============*/
+@import './terms/terms.css'
