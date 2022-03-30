@@ -1,83 +1,97 @@
-
-
 /*=============== NAV =======================*/
-nav{
+nav {
   position: fixed;
   z-index: 100;
   height: calc(1.3rem + var(--header-height));
 }
 
-.logo{
+.logo {
   background: var(--background);
   height: 4rem;
 }
 
-.logo-titulo{
+.logo-titulo {
   display: inline-flex;
-  font-size: 1.1rem;
+  font-size: var(--normal-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
   color: var(--title-color);
   margin: 1.5rem 1rem 1rem 0;
 }
 
-.logo-img{
- height: -3rem;
- margin: 0 0 0 1rem;
+.logo-img {
+  height: -4rem;
+  margin: 0 0 -.4rem 1rem;
 }
 
-@media (max-width: 767px){
-nav .menu {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: 100;
-  background: var(--background);
-  text-align: center;
-  display: none;
+.nav-link{
+  font-size: var(--normal-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
 }
 
-.logo{
-  width: 100vw;
-}
 
-.logo-img{
-  width: 1.5rem;
-}
+@media (max-width: 767px) {
+  nav .menu {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    background: var(--background);
+    text-align: center;
+    display: none;
+  }
 
-.menu{
-  text-align: center;
-  font-size: 1.2rem;
-}
+  .logo {
+    width: 100vw;
+  }
 
-.btn-dark-mode{
-  text-align: center;
-  display: inline-block;
-}
+  .logo-img {
+    width: 1.5rem;
+  }
 
-.menu-mobile{
-  width: 1.8rem;
-  margin-top: -1rem;
-}
+  .menu {
+    text-align: center;
+  }
 
+  .nav-link{
+    font-size: var(--h5-font-size);
+    font-family: var(--title-font);
+    font-weight: var(--font-semi-bold);
+  }
+
+  .btn-dark-mode {
+    font-size: var(--h5-font-size);
+    font-family: var(--title-font);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+    display: inline-block;
+  }
+
+  .menu-mobile {
+    width: 1.8rem;
+    margin-top: -1rem;
+  }
 }
 
 /*====== Show menu ========*/
-#nav.active .menu{
+#nav.active .menu {
   display: block;
 }
 
-#menu-mobile{
+#menu-mobile {
   width: 2rem;
   float: right;
   margin: 2rem;
 }
 
-.nav-link{
+.nav-link {
   margin: 2rem 0;
 }
 
 .links .btn-dark-mode {
   width: 2.5rem;
-  margin: 3rem ;
+  margin: 3rem;
 }
 
 .links a {
@@ -89,67 +103,65 @@ nav .menu {
 }
 
 /*====== dark-mode ========*/
-#btn{
+#btn {
   cursor: pointer;
   color: var(--title-text);
 }
 
-
 /*============= MEDIA =============*/
-@media(min-width: 768px){
-  .section{
+@media (min-width: 768px) {
+  .section {
     margin-bottom: 15rem;
-   }
- 
-   #nav {
-     top: 0;
-     width: 100vw;
-     background-color: var(--background);
-     z-index: 100;
-   }
- 
-   #menu-mobile {
-     display: none;
-   }
- 
-   .header #nav .menu {
-     height: 1rem;
-   }
- 
-   #nav {
-     display: flex;
-     justify-content: space-around;
-   }
- 
-   .logo {
-     display: inline-flex;
-     flex-direction: row;
-     justify-content: space-between;
-     background: none;
-     margin: 1rem;
-   }
- 
-   .logo-img {
-     width: 2rem;
-     margin: -1.3rem;
-   }
- 
-   .logo-titulo {
-   
-     font-size: 1.2rem;
-     margin: 1.4rem;
-     text-align: center;
-     color: var(--title-color);
-   }
- 
-   .links {
-     display: flex;
-     gap: 2rem;
-     margin: 0.5rem;
-   }
- 
-   .btn-dark-mode img {
-     position: relative;
-     top: -1rem;
-   }
+  }
+
+  #nav {
+    top: 0;
+    width: 100vw;
+    background-color: var(--background);
+    z-index: 100;
+  }
+
+  #menu-mobile {
+    display: none;
+  }
+
+  .header #nav .menu {
+    height: 1rem;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: none;
+    margin: 1rem;
+  }
+
+  .logo-img {
+    width: 2rem;
+    margin: -1.3rem;
+  }
+
+  .logo-titulo {
+    font-size: 1.2rem;
+    margin: 1.4rem;
+    text-align: center;
+    color: var(--title-color);
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+    margin: 0.5rem;
+  }
+
+  .btn-dark-mode img {
+    position: relative;
+    top: -1rem;
+  }
 }
