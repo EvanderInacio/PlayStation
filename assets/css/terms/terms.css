@@ -1,0 +1,45 @@
+@import '../style.css';
+
+
+/*=========== TERMS ============*/
+.terms-container{
+  margin-top: 6rem;
+}
+
+.terms-container h2{
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+}
+
+.sub-title{
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h5-font-size);
+}
+
+.terms-container p{
+  margin: 2rem 0;
+  font-family: var(--text-font);
+  font-weight: var(--font-regular);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+
+
+@media (min-width: 768px){
+  .terms-container{
+    margin-top: 8rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1200px){
+  .terms-container{
+    width: 60vw;
+  }
+}
