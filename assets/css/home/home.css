@@ -12,8 +12,8 @@
 }
 
 .home-titulo {
-  font-size: 2rem;
-  font-family: var(--tittle-font);
+  font-size: var(--h1-font-size);
+  font-family: var(--title-font);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
   margin-bottom: var(--mb-2);
@@ -24,7 +24,7 @@
 }
 
 .home-description {
-  font-size: 1rem;
+  font-size: var(--normal-font-size);
   font-family: var(--text-font);
   font-weight: var(--font-regular);
   color: var(--text-color);
@@ -88,15 +88,16 @@
 }
 
 .about-title {
-  font-size: 2rem;
-  font-family: var(--font-semi-bold);
+  font-size: var( --h2-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
   color: var(--title-color);
   margin-bottom: var(--mb-1-5);
 }
 
 .about-description {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: var(--normal-font-size);
   font-weight: var(--font-regular);
   font-family: var(--text-font);
 }
@@ -112,7 +113,7 @@
   position: relative;
   color: var(--text-color);
   font-weight: var(--font-medium);
-  font-family: var(--text-font);
+  font-family: var(--title-font);
 }
 
 .about-list li::before {
@@ -148,14 +149,15 @@
 /*====================== FUNCTIONS =======================*/
 
 .function-title {
-  font-size: 2rem;
+  font-size: var(--h2-font-size);
   color: var(--title-color);
-  font-family: var(--font-semi-bold);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
 }
 
 .function-description {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: var(--h3-font-size);
   font-weight: var(--font-regular);
   font-family: var(--text-font);
   margin-bottom: var(--mb-2-5);
@@ -178,6 +180,9 @@
 
 .card-content h3 {
   color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h3-font-size);
+  font-family: var(--title-font);
 }
 
 .card {
@@ -224,7 +229,9 @@
 
 .top-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--title-font);
   color: var(--title-color);
 }
 
@@ -232,6 +239,9 @@
   text-align: center;
   margin-bottom: var(--mb-4);
   color: var(--text-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-regular);
+  font-family: var(--text-font);
 }
 
 .top-content-card {
@@ -246,23 +256,29 @@
   height: 26rem;
   border-radius: 26px;
   margin-bottom: 25px;
-  position: relative;
-
   text-align: center;
+  position: relative;
 }
 
-.border-top {
+.img-controller-top{
+  position: relative;
+}
+
+.border-top::before {
   content: '';
   position: absolute;
   left: 2.5rem;
   width: 10.5rem;
   height: 10rem;
   background: #362ba9;
-  z-index: -1;
   border-radius: 50%;
 }
 
 .top-card h5 {
+  font-weight: var(--font-semi-bold);
+  font-family: var(--title-font);
+  font-size: var(--h5-font-size);
+  color: var(--title-color);
   margin-top: var(--mb-1-5);
 }
 
@@ -275,19 +291,21 @@
   padding-left: 3.6rem;
 }
 
+.estrela p{
+  color: var(--text-color);
+  font-size: var(--h5-font-size);
+  font-family: var(--text-font);
+  font-weight: var(--font-regular);
+}
+
 .top-money {
   margin-top: 2rem;
   text-align: start;
   padding-left: 2.5rem;
-  color: var(--text-color);
-}
-
-.top-card p {
-  color: var(--text-color);
-}
-
-.top-card h5 {
   color: var(--title-color);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--small-font-size);
 }
 
 .cart {
@@ -330,7 +348,7 @@
 .faq-description{
   color: var(--text-color);
   font-size: var(--normal-font-size);
-  font-family: var(--font-regular);
+  font-weight: var(--font-regular);
   font-family: var(--text-font);
 }
 
@@ -349,6 +367,8 @@
 .faq-page {
   color: var(--text-color);
   font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--title-font);
   cursor: pointer;
   padding: 30px 0;
   width: 85%; 
@@ -365,8 +385,8 @@
   display: none;
   overflow: hidden;
   font-size: var(--h5-font-size);
-  font-family: var(--font-regular);
-  font-weight: var(--text-font);
+  font-family: var(--text-font);
+  font-weight: var(--font-regular);
   color: var(--text-color);
 }
 
@@ -586,7 +606,15 @@
   }
 
   .function-title {
-    font-size: 3rem;
+    font-size: var(--h2-font-size);
+  }
+
+  .function-description{
+    font-size: var(--h5-font-size);
+  }
+
+  .card h3{
+    font-size: var(--normal-font-size);
   }
 
   .card-content {
@@ -596,16 +624,36 @@
 
   /*============= TOP CARDS ===============*/
   .top-title {
-    font-size: 3rem;
+    font-size: var(--h2-font-size);
   }
 
-  /*============= FAQ ========================*/
+  .top-description{
+    font-size: var(--h5-font-size);
+  }
+
+  .top-card h5{
+    font-size: var(--normal-font-size);
+  }
+
+  .estrela p{
+    font-size: var(--small-font-size);
+    text-align: center;
+    padding: .2rem .3rem;
+  }
+
+  .top-money{
+    font-size: var(--small-font-size);
+  }
+
 }
 
 @media (min-width: 994px){
+
+  /*============= FAQ ========================*/
   .faq-content{
     width: 70vw;
   }
+  
 }
 
 @media (min-width: 1200px) {
