@@ -69,13 +69,10 @@ span{
   --background-card: hsla(0, 0%, 80%, 0.246);
   --card-color: hsla(0, 0%, 64%, 0.226);
   --card-border: hsl(0, 0%, 80%);  
-  --controle-color: hsl(0, 0%, 80%); 
-  --scroll-bar: hsl(0, 0%, 47%);
-  --scroll-thumb: hsl(0, 0%, 0%);
-  
+  --controle-color: hsla(0, 0%, 64%, 0.15);; 
  
 
-  /*======= FONTS =========*/
+  /*======= FONTS FAMILY =========*/
   --title-font: 'Poppins', sans-serif;
   --text-font: 'Roboto', sans-serif;
 
@@ -88,7 +85,7 @@ span{
   --normal-font-size: 1rem;
   --small-font-size: 0.75rem;
   
-  /*====== FONTS PESO =======*/
+  /*====== FONTS PESO (WEIGHT) =======*/
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -131,8 +128,7 @@ span{
   --card-color: hsl(222, 15%, 23%);
   --card-border:  hsl(222, 15%, 23%); 
   --controle-color: radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);
-  --scroll-bar: hsl(0, 0%, 18%);
-  --scroll-thumb: hsl(0, 100%, 100%);
+ 
 }
 
 
@@ -142,12 +138,8 @@ body::-webkit-scrollbar {
   width: 10px;             
 }
 
-body::-webkit-scrollbar-track {
-  background: var(--scroll-bar);        
-}
-
 body::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb);  
+  background-color: #362BA9;  
   border-radius: 1px;      
 }
 
