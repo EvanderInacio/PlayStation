@@ -58,20 +58,21 @@ span{
 
 :root{
   --header-height: 4.5rem;
-  --background: hsl(0, 0%, 100%);
-  --menu-text: hsl(0, 0%, 50%);
-  --menu-color: hsl(0, 35%, 91%);
-  --menu-color-hover: hsl(0, 0%, 0%);
-  --title-color: hsl(0, 0%, 1%);
-  --text-color: hsl(236, 7%, 48%); 
-  --button-color: hsl(236, 7%, 48%);
-  --button-color-span: hsl(245, 59%, 42%);
-  --background-card: hsla(0, 0%, 80%, 0.246);
-  --card-color: hsla(0, 0%, 64%, 0.226);
-  --card-border: hsl(0, 0%, 80%);  
-  --controle-color: hsla(0, 0%, 64%, 0.15);; 
- 
 
+  --background: hsl(245, 58%, 7%);
+  --menu-text: hsl(0, 0%, 50%);
+  --menu-color: hsl(0, 0%, 23%);
+  --menu-color-hover: hsl(0, 0%, 100%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(249, 12%, 65%);
+  --buttom-color: hsl(249, 12%, 65%);
+  --button-color-span: hsl(245, 59%, 42%);
+  --background-card: hsl(249, 16%, 9%);
+  --card-color: hsl(222, 15%, 23%);
+  --card-border:  hsl(222, 15%, 23%); 
+  --controle-color: radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);
+
+ 
   /*======= FONTS FAMILY =========*/
   --title-font: 'Poppins', sans-serif;
   --text-font: 'Roboto', sans-serif;
@@ -115,19 +116,20 @@ span{
  }
 }
 
-.dark-theme{ 
-  --background: hsl(245, 58%, 7%);
+.sun-theme{ 
+
+  --background: hsl(0, 0%, 100%);
   --menu-text: hsl(0, 0%, 50%);
-  --menu-color: hsl(0, 0%, 23%);
-  --menu-color-hover: hsl(0, 0%, 100%);
-  --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(249, 12%, 65%);
-  --buttom-color: hsl(249, 12%, 65%);
-  --buttom-color-span: hsl(245, 59%, 42%);
-  --background-card: hsl(249, 16%, 9%);
-  --card-color: hsl(222, 15%, 23%);
-  --card-border:  hsl(222, 15%, 23%); 
-  --controle-color: radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);
+  --menu-color: hsl(0, 35%, 91%);
+  --menu-color-hover: hsl(0, 0%, 0%);
+  --title-color: hsl(0, 0%, 1%);
+  --text-color: hsl(236, 7%, 48%); 
+  --button-color: hsl(236, 7%, 48%);
+  --button-color-span: hsl(245, 59%, 42%);
+  --background-card: hsla(0, 0%, 80%, 0.246);
+  --card-color: hsla(0, 0%, 64%, 0.226);
+  --card-border: hsl(0, 0%, 80%);  
+  --controle-color: hsla(0, 0%, 64%, 0.15);
  
 }
 
