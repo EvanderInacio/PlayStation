@@ -37,9 +37,3 @@
     width: 80vw;
   }
 }
-
-@media (min-width: 1200px){
-  .terms-container{
-    width: 60vw;
-  }
-}
