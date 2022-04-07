@@ -1,0 +1,44 @@
+
+
+/*=========== PRIVACY ============*/
+.privacy-container{
+  margin-top: 6rem;
+}
+
+.privacy-container h2{
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-2);
+}
+
+.privacy-container h4{
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-1-5);
+}
+
+.privacy-container p{
+  color: var(--text-color);
+  margin-bottom: var(--mb-1-5);
+}
+
+.privacy-container ul li{
+  margin-top: var(--mb-0-5);
+  color: var(--text-color);
+}
+
+.privacy-container ul{
+  margin: var(--mb-3) 0;
+}
+
+@media (min-width: 994px){
+  .privacy-container{
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    
+  }
+}
