@@ -13,13 +13,6 @@
   font-weight: var(--font-semi-bold);
 }
 
-.sub-title{
-  color: var(--text-color);
-  font-family: var(--text-font);
-  font-weight: var(--font-semi-bold);
-  font-size: var(--h5-font-size);
-}
-
 .terms-container p{
   margin: 2rem 0;
   font-family: var(--text-font);
@@ -37,3 +30,4 @@
     width: 80vw;
   }
 }
+
