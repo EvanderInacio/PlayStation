@@ -1,9 +1,7 @@
-
 /*============ GLOBAL ==========*/
 @import './global/header.css';
 @import './global/global.css';
 @import './global/footer.css';
-
 
 /*=========== HOME ============*/
 @import './home/home.css';
