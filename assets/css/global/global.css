@@ -42,15 +42,21 @@ ul{
 .section-title{
   color: var(--title-color);
   font-family: var(--tittle-font);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
 }
 
 .section-span{
   color: var(--button-color-span);
 }
 
-span{
-  color: var(--buttom-color-span);
+.sub-title{
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h5-font-size);
 }
+
 
 
 
@@ -68,9 +74,10 @@ span{
   --buttom-color: hsl(249, 12%, 65%);
   --button-color-span: hsl(245, 59%, 42%);
   --background-card: hsl(249, 16%, 9%);
-  --card-color: hsl(222, 15%, 23%);
+  --card-color: hsl(255, 19%, 13%);
   --card-border:  hsl(222, 15%, 23%); 
   --controle-color: radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);
+  --scrollbar-color:hsl(248, 13%, 12%);
 
  
   /*======= FONTS FAMILY =========*/
@@ -130,6 +137,7 @@ span{
   --card-color: hsla(0, 0%, 64%, 0.226);
   --card-border: hsl(0, 0%, 80%);  
   --controle-color: hsla(0, 0%, 64%, 0.15);
+  --scrollbar-color:hsl(0, 1%, 71%);
  
 }
 
@@ -137,7 +145,8 @@ span{
 /*============ SCROLL BAR =========================*/
 
 body::-webkit-scrollbar {
-  width: 10px;             
+  width: 10px;  
+  background-color: var(--scrollbar-color);           
 }
 
 body::-webkit-scrollbar-thumb {
