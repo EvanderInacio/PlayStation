@@ -13,3 +13,6 @@
 
 /*=========== PRIVACY ============*/
 @import './privacy/privacy.css';
+
+/*=========== CONTACT ============*/
+@import './contact/contact.css';
