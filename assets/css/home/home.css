@@ -1,758 +1,137 @@
-
-/*======================= HOME =======================*/
-
-.home-container {
-  gap: 1rem;
-  padding-top: 5.9rem;
-}
-
-.home-content {
-  text-align: center;
-  position: relative;
-}
-
-.home-titulo {
-  font-size: var(--h1-font-size);
-  font-family: var(--title-font);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-  margin-bottom: var(--mb-2);
-}
-
-.circle-titulo {
-  display: none;
-}
-
-.home-description {
-  font-size: var(--normal-font-size);
-  font-family: var(--text-font);
-  font-weight: var(--font-regular);
-  color: var(--text-color);
-  margin-bottom: var(--mb-2);
-  text-align: center;
-}
-
-.btn-about-more {
-  padding: var(--mb-0-5);
-  color: #ffff;
-  background: var(--button-color-span);
-  border: 2px solid var(--button-color-span);
-  border-radius: 6px;
-}
-
-.btn-about-more:hover {
-  background: #5f52f1;
-  border-color: #5f52f0;
-}
-
-.btn-explore {
-  color: var(--buttom-color);
-  margin-left: 1rem;
-}
-
-.sony {
-  position: absolute;
-  margin-left: 4rem;
-  text-align: center;
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
-  z-index: -1;
-}
-
-.home-img {
-  margin-top: 10rem;
-  justify-content: center;
-  text-align: center;
-  width: 200px;
-}
-
-.desktop {
-  display: none;
-}
-
-.ps4-img {
-  display: none;
-}
-
-.controle {
-  display: none;
-}
-
-
-/*====================== ABOUT =======================*/
-
-.about-img {
-  display: none;
-}
-
-.about-title {
-  font-size: var( --h2-font-size);
-  font-family: var(--title-font);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-  margin-bottom: var(--mb-1-5);
-}
-
-.about-description {
-  color: var(--text-color);
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-regular);
-  font-family: var(--text-font);
-}
-
-.about-list {
-  margin: var(--mb-2-5) 0;
-  font-size: 0.9rem;
-  margin-left: 2.5rem;
-}
-
-.about-list li {
-  margin-bottom: 1rem;
-  position: relative;
-  color: var(--text-color);
-  font-weight: var(--font-medium);
-  font-family: var(--title-font);
-}
-
-.about-list li::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: -2rem;
-  top: 0.5rem;
-  width: 20px;
-  height: 2px;
-  background: var(--button-color-span);
-  border-radius: 5px;
-}
-
-.button-about {
-  padding: var(--mb-0-5);
-  background: var(--button-color-span);
-  border: 2px solid var(--button-color-span);
-  border-radius: 6px;
-  display: inline-block;
-}
-
-.button-about a {
-  color: #ffff;
-}
-
-.button-about:hover {
-  background: #5f52f1;
-  border-color: #5f52f0;
-}
-
-
-/*====================== FUNCTIONS =======================*/
-
-.function-title {
-  font-size: var(--h2-font-size);
-  color: var(--title-color);
-  font-family: var(--title-font);
-  font-weight: var(--font-semi-bold);
-}
-
-.function-description {
-  color: var(--text-color);
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-regular);
-  font-family: var(--text-font);
-  margin-bottom: var(--mb-2-5);
-}
-
-.function-content {
-  width: auto;
-  height: auto;
-  text-align: center;
-  border: 1px solid var(--card-border);
-  border-radius: 56px;
-  padding: 1rem;
-  background: var(--background-card);
-}
-
-.card-content {
-  display: grid;
-  justify-items: center;
-}
-
-.card-content h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
-  font-size: var(--h3-font-size);
-  font-family: var(--title-font);
-}
-
-.card {
-  text-align: center;
-  border: 1px solid var(--card-border);
-  background: var(--card-color);
-  width: 15rem;
-  padding: 3rem 2rem;
-  border-radius: 56px;
-  margin-bottom: 25px;
-  position: relative;
-}
-
-.card img,
-.card h3 {
-  margin-bottom: var(--mb-2-5);
-}
-
-.line-function {
-  width: 80px;
-  height: 6px;
-  background: rgb(51, 41, 160);
-  transform: matrix(0, -1, -1, 0, 0, 0, 1);
-  position: absolute;
-  left: 5rem;
-}
-
-.circle-function {
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  background: rgb(51, 41, 160);
-  position: absolute;
-  left: 9.5rem;
-  bottom: 2.3rem;
-}
-
-
-/*====================== TOP CARDS =======================*/
-
-.top-content-card {
-  display: grid;
-}
-
-.top-title {
-  text-align: center;
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  font-family: var(--title-font);
-  color: var(--title-color);
-}
-
-.top-description {
-  text-align: center;
-  margin-bottom: var(--mb-4);
-  color: var(--text-color);
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-regular);
-  font-family: var(--text-font);
-}
-
-.top-content-card {
-  justify-content: center;
-}
-
-.top-card {
-  padding-top: 3rem;
-  border: 1px solid var(--card-border);
-  background: var(--controle-color);
-  width: 16rem;
-  height: 26rem;
-  border-radius: 26px;
-  margin-bottom: 25px;
-  text-align: center;
-  position: relative;
-}
-
-.img-controller-top{
-  position: relative;
-}
-
-.border-top::before {
-  content: '';
-  position: absolute;
-  left: 2.5rem;
-  width: 10.5rem;
-  height: 10rem;
-  background: #362ba9;
-  border-radius: 50%;
-}
-
-.top-card h5 {
-  font-weight: var(--font-semi-bold);
-  font-family: var(--title-font);
-  font-size: var(--h5-font-size);
-  color: var(--title-color);
-  margin-top: var(--mb-1-5);
-}
-
-.card-controle {
-  margin-top: -4rem;
-}
-
-.estrela {
-  display: flex;
-  padding-left: 3.6rem;
-}
-
-.estrela p{
-  color: var(--text-color);
-  font-size: var(--h5-font-size);
-  font-family: var(--text-font);
-  font-weight: var(--font-regular);
-}
-
-.top-money {
-  margin-top: 2rem;
-  text-align: start;
-  padding-left: 2.5rem;
-  color: var(--title-color);
-  font-family: var(--title-font);
-  font-weight: var(--font-semi-bold);
-  font-size: var(--small-font-size);
-}
-
-.cart {
-  width: 4rem;
-  height: 3rem;
-  border: 1px solid #362ba9;
-  border-radius: 5px;
-  background: #302a6f;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.cart img {
-  justify-content: center;
-  align-items: center;
-  width: 1.5rem;
-  position: absolute;
-  right: 1rem;
-  top: 0.5rem;
-}
-
-
-/*========= FAQ ==================*/
-.sub-title{
-  margin-top: 6rem;
-  font-size: var(--small-font-size);
-  font-weight: var(--font-medium);
-  font-family: var(--text-font);
-  color: var(--text-color);
-  margin-bottom: -1rem;
-}
-
-.faq-title{
-  font-size: var(--h2-font-size);
-  font-family: var(--title-font);
-  font-weight: var(--font-semi-bold);
-}
-
-.faq-description{
-  color: var(--text-color);
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-regular);
-  font-family: var(--text-font);
-}
-
-.faq-content{
-  border: 2px solid var(--card-color);
-  border-radius: 25px;
-  padding: 1.5rem 0;
-}
-
-.hr-line{
-  width:90%;
-  height: 1px;
-  margin: auto;
-}
-
-.faq-page {
-  color: var(--text-color);
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-semi-bold);
-  font-family: var(--title-font);
-  cursor: pointer;
-  padding: 30px 0;
-  width: 85%; 
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  margin: auto;
-}
-
-.faq-body{
-  margin: auto;
-  padding: 0 18px;
-  margin-bottom: 1rem;
-  display: none;
-  overflow: hidden;
-  font-size: var(--h5-font-size);
-  font-family: var(--text-font);
-  font-weight: var(--font-regular);
-  color: var(--text-color);
-}
-
-.faq-body p{
-  margin-bottom: var(--mb-2);
-}
-
-.faq-page:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-
-/*=============== MEDIA QUERS =======================*/
-
-@media (min-width: 568px) {
-
-  /*=============== HOME ==================*/
-  .home-titulo {
-    font-size: 3rem;
-    font-family: var(--font-semi-bold);
-  }
-
-  .home-description {
-    font-size: 1rem;
-  }
-  .home-img {
-    width: 20rem;
-  }
-
-  /*=============== ABOUT ==================*/
-  .about-title {
-    font-size: 2.5rem;
-  }
-
-  /*=============== FUNCTIONS ==================*/
-  .card-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /*============= TOP CARDS ===============*/
-  .top-content-card {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-  }
-
-  /*============= FAQ ========================*/
-  .faq-content{
-    width: 95vw;
-  }
-
-  .faq-page{
-    font-size: var( --h5-font-size);
-  }
-
-  .faq-body{
-    font-size: var(--normal-font-size);
-    margin: 0 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-
-  /*=============== HOME ==================*/
-  .home-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .home-data {
-    justify-content: flex-start;
-    margin-top: 5rem;
-    position: relative;
-  }
-
-  .home-titulo {
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 0.1rem;
-  }
-
-  .controller {
-    margin-left: -3rem;
-  }
-
-  .home-description {
-    font-size: 0.9rem;
-  }
-
-  .btn-explore {
-    padding: 1rem;
-    gap: 2rem;
-  }
-
-  .btn-explore:hover {
-    color: var(--button-color-span);
-  }
-
-  .sony {
-    position: absolute;
-    text-align: center;
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-  }
-
-  .desktop {
-    display: block;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  .home-data-img {
-    position: relative;
-  }
-
-  .home-img {
-    margin-top: 0;
-    width: 26rem;
-    position: relative;
-  }
-
-  .superior {
-    top: 10rem;
-    left: -12rem;
-    color: var(--text-color);
-    padding-left: 10rem;
-    font-size: xx-small;
-    position: absolute;
-  }
-
-  .line1 {
-    position: absolute;
-    width: 5px;
-    height: 60px;
-    left: 16rem;
-    top: -0.7rem;
-    background: rgba(51, 41, 160, 0.582);
-    transform: matrix(0, -1, -1, 0, 0, 0);
-  }
-
-  .circle1 {
-    content: '';
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    left: 17rem;
-    top: 0.6rem;
-    border-radius: 50%;
-    background: #362ba9;
-    box-shadow: 0px 0px 3px 1px #302a6f;
-  }
-
-  .inferior {
-    margin-left: 16rem;
-    margin-top: -2rem;
-    color: var(--text-color);
-    font-size: xx-small;
-    position: absolute;
-  }
-
-  .line2 {
-    position: absolute;
-    width: 5px;
-    height: 150px;
-    left: 1.5rem;
-    top: -9.6rem;
-    background: rgba(51, 41, 160, 0.582);
-    transform: matrix(0, -1, -1, 0, 0);
-  }
-
-  .circle2 {
-    content: '';
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    left: 1.15rem;
-    top: -10rem;
-    border-radius: 50%;
-    background: #362ba9;
-    box-shadow: 0px 0px 3px 1px #302a6f;
-  }
-
-  .controle {
-    display: block;
-  }
-
-  /*=========== ABOUT ==============*/
-  .about-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about-title {
-    font-size: 3rem;
-  }
-
-  .about-img {
-    display: block;
-    width: 26rem;
-  }
-
-
-  /*=========== FUNCTIONS ==============*/
-  .function-content{
-    padding: 0 5rem;
-  }
-
-  .function-title {
-    font-size: var(--h2-font-size);
-  }
-
-  .function-description{
-    font-size: var(--h5-font-size);
-  }
-
-  .card h3{
-    font-size: var(--normal-font-size);
-  }
-
-  .card-content {
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  /*============= TOP CARDS ===============*/
-  .top-title {
-    font-size: var(--h2-font-size);
-  }
-
-  .top-description{
-    font-size: var(--h5-font-size);
-  }
-
-  .top-card h5{
-    font-size: var(--normal-font-size);
-  }
-
-  .estrela p{
-    font-size: var(--small-font-size);
-    text-align: center;
-    padding: .2rem .3rem;
-  }
-
-  .top-money{
-    font-size: var(--small-font-size);
-  }
-
-}
-
-@media (min-width: 994px){
-
-  /*============= FAQ ========================*/
-  .faq-content{
-    width: 70vw;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!------- CSS --------------->
+    <link rel="stylesheet" href="../css/terms/terms.css">
+    
+    <!------- GOOGLE FONTS --------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!------- ICON UNICONS --------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>PlayStation</title>
+    <link rel="icon" href="../images/logo.svg">
+</head>
+<body>
   
-}
+  <!------- HEADER --------------->
+    <header class="header">
+      <nav id="nav">
+      
+      <div class="logo">
+        <div id="menu-mobile">
+          <img class="menu-mobile" src="../images/menu-mobile.svg" alt="menu do dispositivo mobile">
+        </div>
+        <img class="logo-img" src="../images/logo.svg" alt="logo do PlayStation" />
+        <h2 class="logo-titulo">PlayStation</h2>
+      </div>
+    
+      <div class="menu">
+        <ul class="links">
+          <li class="nav-link"> <a href="/index.html"> Home</li></a>
+          <li class="nav-link"> <a href="#"> About</li></a>
+          <li class="nav-link"> <a href="#"> Produt</li></a>
+          <li class="nav-link"> <a href="/index.html#faq"> FAQs</li></a>
+          <li class="nav-link"> <a href="#"> Contact</li></a>
+          
+          <div class="btn-dark-mode" >
+             <img id="btn" src="../images/Dark.svg" alt="botão do dark mode"> 
+          </div>
+        </ul>
+      </div>
+    </nav>
+    </header>
 
-@media (min-width: 1200px) {
+   <!-------MAIN --------------->
+    <main class="main">
+      <section class="section privacy grid" >
 
-  /*=============== HOME ==================*/
-  .home-data {
-    justify-content: flex-start;
-    margin-top: 5rem;
-    margin-left: -20rem;
-  }
+        <div class="privacy-container">
+          <span class="sub-title">Politics</span>
+            <h2>Privacy <span class="section-span">Policy</span></h2>
 
-  .home-titulo {
-    font-size: 4rem;
-  }
+            <h4>1. Chargeback Policy</h4>
+            <p>We collect your data according to your access and use of our websites, applications and services offered by Playstation or by partners that have been duly authorized by us.</p>
 
-  .sony {
-    position: absolute;
-    text-align: center;
-    margin-top: 4rem;
-    left: 12rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6rem;
-  }
+            <p>1.1 Information will be collected:</p>
 
-  .home-img {
-    width: 30rem;
-    position: relative;
-  }
+            <ul>
+              <li>(i) When you voluntarily complete the registration available on our</li>
+              <li>(ii) During your browsing on our websites, being stored in your computer's browser;</li>
+              <li>(iii) To send newsletters or inform you about promotions and contests, provided you give us permission to do so; </li>
+              <li>(iv) From partners who have obtained authorization to share them with Playstation.</li>
+            </ul>
 
-  .superior {
-    top: 12rem;
-    left: -21rem;
-    font-size: small;
-  }
+              <p>1.2 The information PlayStation collects may include, but is not limited to:</p>
 
-  .inferior {
-    font-size: small;
-  }
+              <ul>
+                <li>(i) Registration data¹ and address; </li>
+                <li>(ii) Data for the verification of the User's identity; </li>
+                <li>(iii) Data for data management processes; and</li>
+                <li>(iv) Navigational data.</li>
+              </ul>
 
-  .line1 {
-    width: 5px;
-    height: 130px;
-    left: 21rem;
-    top: -3rem;
-    background: rgba(51, 41, 160, 0.582);
-    transform: matrix(0, -1, -1, 0, 0, 0);
-  }
+             
+        </div>
+      </section>
+    </main>
 
-  .circle1 {
-    content: '';
-    position: absolute;
+    
 
-    width: 17px;
-    height: 17px;
-    left: 25rem;
-    top: 0.5rem;
+    <!------- FOOTER --------------->
+   <footer class="footer">
+    <section class="section grid footer-container ">
+     <hr class="hr-line">
 
-    border-radius: 50%;
-    background: #362ba9;
-    box-shadow: 0px 0px 3px 1px #302a6f;
-  }
+     <div class="footer-content">
+       <div class="left-footer">
+         <div class="logo-footer">
+          <img class="footer-icon" src="../images/logo.svg" alt="logo do PlayStation" />
+          <h2 class="logo-titulo">PlayStation</h2>
+           <p class="footer-description">Welcome to PlayStation Plus. Enhance your   PlayStation experience with online multiplayer, monthly games, exclusive   discounts and more.</p>
+        </div>
+          <div class="social">
+           <a href="https://github.com/EvanderInacio" target="_blank"><i class="uil uil-github"></i></a>
+           <a href="https://www.linkedin.com/in/evander-inacio/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+           <a href="#"><i class="uil uil-instagram"></i></a>
+         </div>
+      </div>
 
+      <div class="right-footer">
+         <div class="services"> 
+           <h4 class="footer-h4">Services</h4>
+           <a class="footer-a" href="#">Produts</a>
+         </div>
+         <div class="company">
+           <h4 class="footer-h4">Company</h4>
+           <a class="footer-a" href="/index.html">Home</a>
+           <a class="footer-a" href="#">About</a>
+           <a class="footer-a" href="#faq">FaQs</a>
+         </div>
+         <div class="suport">
+           <h4 class="footer-h4">Suport</h4>
+           <a class="footer-a" href=".././html/Terms.html">Terms of Service</a>
+           <a class="footer-a" href=".././html/privacy.html">Privacy Policy</a>
+           <a class="footer-a" href=".././html/contact.html">Contact Us</a>
+         </div>
+      </div>
+    </div>
+      <hr class="hr-line">
+     <p class="copy">Copyright 2022 Playstation - All Rights Rleserved</p>
+    </section>
+  </footer>
+</body>
 
-  /*============= ABOUT ===============*/
-  .about-title {
-    font-size: 3rem;
-  }
-
-  .about-description {
-    font-size: 1rem;
-  }
-
-  .about-list {
-    font-size: 1rem;
-    font-weight: var(--font-semi-bold);
-  }
-
-  .about-img {
-    width: 50rem;
-    margin-top: -10rem;
-  }
-
-  /*============= FUNCTIONS ===============*/
-  .function-content{
-    padding: 0 4rem;
-  }
-
-  .card-content {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  /*============= TOP CARDS ===============*/
-  .top-content-card {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  /*============= FAQ ========================*/
-  .faq-content{
-    width: 60vw;
-  }
-}
+ <!------- JS --------------->
+ <script src="../js/main.js"></script>
+</html>
