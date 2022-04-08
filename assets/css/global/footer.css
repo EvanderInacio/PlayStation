@@ -8,6 +8,17 @@
   margin: 0 2rem;
 }
 
+.logo-footer{
+  position: relative;
+}
+
+.footer-icon{
+  position: absolute;
+  width: 1.3rem;
+  left: -1.3rem;
+  top: 1.5rem;
+}
+
 .footer-description {
   font-size: var(--normal-font-size);
   font-family: var(--text-font);
@@ -21,6 +32,10 @@
   font-size: 1.5rem;
   color: var(--text-color);
   padding: 0 5px;
+}
+
+.social a:hover{
+  color: var(--menu-color-hover);
 }
 
 .left-footer {
@@ -48,6 +63,10 @@
   font-family: var(--text-font);
   font-weight: var(--font-regular);
   color: var(--text-color);
+}
+
+.footer-a:hover{
+  color: var(--menu-color-hover);
 }
 
 .copy {
@@ -80,6 +99,10 @@
     display: flex;
     justify-content: space-evenly;
   }
+  
+  .footer-icon{
+   width: 2rem;
+  }
 
   .footer-description {
     margin-bottom: 2rem;
@@ -92,4 +115,5 @@
   .copy {
     margin: 2rem 0;
   }
+
 }
