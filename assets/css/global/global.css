@@ -46,6 +46,13 @@ ul{
   font-weight: var(--font-semi-bold);
 }
 
+.section-description{
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--text-font);
+}
+
 .section-span{
   color: var(--button-color-span);
 }
@@ -77,9 +84,9 @@ ul{
   --card-color: hsl(255, 19%, 13%);
   --card-border:  hsl(222, 15%, 23%); 
   --controle-color: radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);
-  --scrollbar-color:hsl(248, 13%, 12%);
+  --scrollbar-color:hsl(246, 44%, 8%);
 
- 
+  
   /*======= FONTS FAMILY =========*/
   --title-font: 'Poppins', sans-serif;
   --text-font: 'Roboto', sans-serif;
