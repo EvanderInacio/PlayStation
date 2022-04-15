@@ -83,10 +83,6 @@
 
 /*====================== ABOUT =======================*/
 
-.about-container{
-  margin-top: var(--mb-2);
-}
-
 .about-img {
   display: none;
 }
