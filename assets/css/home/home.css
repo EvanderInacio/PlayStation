@@ -52,12 +52,12 @@
 
 .sony {
   position: absolute;
-  margin-left: 4rem;
+  margin-left: 3.5rem;
   text-align: center;
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  gap: 5.5rem;
   z-index: -1;
 }
 
@@ -409,6 +409,16 @@
 
 /*=============== MEDIA QUERS =======================*/
 
+@media (max-width: 350px){
+  .sony{
+    margin-left: 2rem;
+  }
+
+  .home-button{
+    display: grid;
+  }
+}
+
 @media (min-width: 568px) {
 
   /*=============== HOME ==================*/
@@ -498,10 +508,6 @@
 
   .desktop {
     display: block;
-  }
-
-  .mobile {
-    display: none;
   }
 
   .home-data-img {
@@ -669,10 +675,9 @@
     position: absolute;
     text-align: center;
     margin-top: 4rem;
-    left: 12rem;
+    left: 15rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 6rem;
   }
 
   .home-img {
