@@ -83,6 +83,10 @@
 
 /*====================== ABOUT =======================*/
 
+.about-container{
+  padding-top: 3rem;
+}
+
 .about-img {
   display: none;
 }
