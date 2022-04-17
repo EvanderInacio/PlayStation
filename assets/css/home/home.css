@@ -654,6 +654,11 @@
 }
 
 @media (min-width: 994px){
+  
+  /*============= ABOUT ========================*/
+  .about-container{
+    padding-top: 0;
+  }
 
   /*============= FAQ ========================*/
   .faq-content{
@@ -743,6 +748,10 @@
   }
 
   /*============= FUNCTIONS ===============*/
+  .functions-container {
+    margin-top: -8rem;
+  }
+  
   .function-content{
     padding: 0 4rem;
   }
