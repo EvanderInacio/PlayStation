@@ -91,7 +91,7 @@
   display: none;
 }
 
-.about-title {
+.about-home-title {
   font-size: var( --h2-font-size);
   font-family: var(--title-font);
   font-weight: var(--font-semi-bold);
@@ -99,7 +99,7 @@
   margin-bottom: var(--mb-1-5);
 }
 
-.about-description {
+.about-home-description {
   color: var(--text-color);
   font-size: var(--normal-font-size);
   font-weight: var(--font-regular);
