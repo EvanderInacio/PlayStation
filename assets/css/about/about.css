@@ -5,6 +5,11 @@
   margin-top: 7rem;
 }
 
+.about-title{
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
 
 .about-content-1,
 .data-2{
