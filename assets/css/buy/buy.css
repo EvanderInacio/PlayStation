@@ -1,0 +1,145 @@
+
+/*======= BUY =========*/
+.container-form{
+  padding: 2rem;
+}
+
+.card-buy{
+  background: radial-gradient(50% 50% at 50% 50%, #17152F 0%, #08052B 100%);
+  border-radius: 5px;
+  width: 100%;
+  display: none;
+  position: relative;
+}
+
+.button-buy:hover {
+  cursor: pointer;
+}
+
+.card-buy {
+  display: none;
+}
+
+.button-buy.active .card-buy {
+  display: block;
+}
+
+.button-buy{
+  margin-bottom: 2rem;
+}
+
+.card-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  border-radius: 0.3rem;
+  padding: 0.354rem 1rem;
+  font-family: var(--title-font);
+  font-weight: var(--font-regular);
+  font-size: var(--h5-font-size);
+  margin-bottom: var(--mb-1);
+  color: #bebebe;
+}
+
+.card-button:hover{
+  background: #393737;
+  color: #d5d4d4;
+}
+
+
+.card-buy h5{
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h5-font-size);
+  padding: var(--mb-1);
+}
+
+.estrela-buy{
+  width: 15px;
+  height: 15px;
+  margin-left: -2.5rem;
+  margin-bottom: var(--mb-0-75);
+}
+
+.description-card{
+  font-size: var(--small-font-size);
+  font-family: var(--text-font);
+  font-weight: var(--regular-font);
+  margin-left: 1rem;
+}
+
+.img-buy-1{
+  width: 9rem; 
+  position: relative;
+  margin-top: 1.4rem;
+}
+
+.img-buy{
+   width: 9rem; 
+  position: relative;
+  margin-top: -1rem;
+}
+
+.border-buy::before {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  margin-left: 1rem;
+  width: 7rem;
+  height: 7rem;
+  background: #362ba9;
+  border-radius: 50%;
+}
+
+.form-title-buy{
+  color: var(--title-color);
+  padding-top: 1.5rem;
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-1);
+}
+
+.small {
+  height: 2rem;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  background: var(--background-card);
+  color: var(--text-color); 
+}
+
+.large{
+  height: 2rem;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  background: var(--background-card);
+  color: var(--text-color);
+}
+
+
+@media (min-width: 994px){
+  .card-buy{
+    height: 140px;
+  }
+
+  .content-img{
+    position: absolute;
+    right: 0;
+    top: 0;
+  } 
+
+  .form-small{
+    display: flex;
+    justify-content: center;
+  } 
+
+  .small{
+    width: 200px;
+  }
+
+  .large{
+    width: 27rem;
+  }
+
+}
