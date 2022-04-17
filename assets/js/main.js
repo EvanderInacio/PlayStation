@@ -42,3 +42,16 @@ for (i = 0; i < faq.length; i++) {
     }
   })
 }
+
+// =============== BUY MORE ================== //
+let card = document.querySelectorAll('.button-buy')
+
+card.forEach(event => {
+  event.addEventListener('click', () => {
+    if (event.classList.contains('active')) {
+      event.classList.remove('active')
+    } else {
+      event.classList.add('active')
+    }
+  })
+})
