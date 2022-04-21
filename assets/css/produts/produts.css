@@ -1,0 +1,208 @@
+
+/*======================= PRODUTS =======================*/
+
+.produt-content{
+  padding-top: 5.9rem;
+}
+.data-1 h2{
+  margin-bottom: var(--mb-1);
+}
+
+.control-1 img{
+  margin-top: -1rem;
+  width: 20rem;
+}
+
+.btn-produts a{
+  padding: var(--mb-0-5);
+  color: var(--text-btn-produts);
+  background: var(--button-color-produts);
+  border: 2px solid var(--button-color-produts);
+  border-radius: 6px;
+  width: 105px;
+}
+
+.btn-produts a:hover {
+  background: var(--buttom-color);
+  border-color: var(--buttom-color);
+  color: var(--title-color);
+}
+
+.btn-borda a{
+  border: 2px solid white;
+  background: white;
+  color: #362BA9;
+}
+
+.btn-borda a:hover {
+  background: var(--buttom-color);
+  border-color: var(--buttom-color);
+  color: var(--title-color);
+}
+
+/*======= CONTROL 2 ===========*/
+.borda{
+  background: #362BA9;
+  margin: -1.5rem;
+}
+
+.control-2{
+  display: flex;
+  padding: 8.125rem 0 8.75rem 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-produts-mobile{
+  width: 15rem;
+  margin-bottom: var(--mb-1-5);
+}
+
+.img-desktop{
+  display: none;
+}
+
+.borda-title{
+  font-size: var(--h2-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-2-5);
+}
+
+.borda-description{
+  text-align: center;
+  font-family: var(text-font);
+  font-size: var(--normal-font-size);
+  padding: 0 1rem;
+  margin-bottom: var(--mb-1-5);
+}
+
+.borda-title, .borda-description{
+  color: white;
+}
+
+
+.borda-control{
+  text-align: center;
+}
+
+.about-produts li {
+  margin-bottom: 1rem;
+  position: relative;
+  color: white;
+  font-weight: var(--font-medium);
+  font-family: var(--title-font);
+  margin-bottom: var(--mb-1);
+}
+
+.about-produts li::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  margin-left: -2rem;
+  top: 0.8rem;
+  width: 20px;
+  height: 4px;
+  background: white;
+  border-radius: 5px;
+}
+
+/*======= CONTROL 3 ===========*/
+.control-3 img{
+  width: 19rem;
+}
+
+
+@media (min-width: 768px){
+
+  .control-1,
+  .control-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .borda-control{
+    border: 4px solid #B0A8FF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 25px; 
+  }
+
+  .borda-title,
+  .btn-produts{
+    margin: 2rem 0;
+  }
+
+  .img-produts-mobile{
+    display: none;
+  }
+
+}
+
+
+@media (min-width: 994px){
+
+  .produt-content{
+    padding-top: 8rem;
+  }
+
+  .about-home-description{
+    width: 25rem;
+  }
+  
+  .control-1 img{
+    width: 32rem;
+    margin-top: -8rem;
+  }
+
+  .borda{
+    margin: -1.5rem;
+    z-index: -2;
+  }
+
+  .borda-control{
+    z-index: -1;
+  }
+
+  .img-desktop{
+    display: block;
+    z-index: 10;
+  }
+
+  .borda{
+    position: relative;
+  }
+
+  .control-produt-left{
+    position: absolute;
+    left: 0;
+  }
+
+  .control-produt-right{
+    position: absolute;
+    right: 0;
+  }
+
+  .borda-control{
+    padding: 0 20rem;
+  }
+
+  .borda-description{
+    width: 20rem;
+  }
+  
+  
+  .control-3 img{
+    width: 32rem;
+  }
+
+} 
+
+@media (min-width: 1200px){
+  .borda-description{
+    width: 35rem;
+  }
+}
+
+
