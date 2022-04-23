@@ -123,10 +123,26 @@
   border-color: #5f52f0;
 }
 
+@media (max-width: 350px){
+ .sub-contact,
+ .title-contact{
+   margin-left: 1.2rem;
+ }
+
+ .content-descrition{
+   margin:0 .8rem;
+   padding: .5rem;
+ }
+}
+
 @media(min-width: 768px){
   .contact-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-button{
+    font-size: 1.9rem;
   }
 
   .sub-content{
@@ -147,6 +163,10 @@
   .content-descrition,
   .form-description{
     padding: 2rem 3rem;
+  }
+
+  .contact-button{
+    font-size: 2.2rem;
   }
 
   .form-title,
