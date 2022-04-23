@@ -3,6 +3,7 @@
 
 .about-content{
   margin-top: 7rem;
+  margin-bottom: var(--mb-2);
 }
 
 .about-title{
@@ -62,6 +63,7 @@
 @media (min-width: 1200px){
   .about-content{
     position: relative;
+    margin-bottom: 3rem;
   }
 
   .about-title{
