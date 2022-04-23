@@ -34,12 +34,17 @@ nav {
 @media (max-width: 767px) {
   nav .menu {
     position: absolute;
-    height: 100vh;
     width: 100vw;
+    height: 0;
+    right: 0;
     z-index: 100;
     background: var(--background);
     text-align: center;
-    display: none;
+    display: block;
+    opacity: 0.98; 
+    transition: .6s; 
+    visibility: hidden; 
+    overflow-y: hidden;
   }
 
   .logo {
@@ -76,8 +81,10 @@ nav {
 
 /*====== Show menu ========*/
 #nav.active .menu {
-  display: block;
+  height: 100vh;
+  visibility: visible;
 }
+
 
 #menu-mobile {
   width: 2rem;
