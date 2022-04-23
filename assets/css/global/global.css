@@ -72,19 +72,19 @@ ul{
 :root{
   --header-height: 4.5rem;
 
-  --background: hsl(245, 58%, 7%);
+  --background: hsl(246, 60%, 7%);
+  --background-second:hsl(246, 63%, 12%);
   --menu-text: hsl(0, 0%, 50%);
   --menu-color: hsl(0, 0%, 23%);
   --menu-color-hover: hsl(0, 0%, 100%);
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(249, 12%, 65%);
-  --buttom-color: hsl(249, 12%, 65%);
+  --buttom-color: hsl(247, 15%, 88%);
   --button-color-span: hsl(245, 59%, 42%);
   --text-btn-produts: hsl(245, 59%, 42%);
   --button-color-produts: hsl(0, 0%, 100%);
   --background-card: hsl(249, 16%, 9%);
   --card-color: hsl(255, 19%, 13%);
-  --card-border:  hsl(222, 15%, 23%); 
   --controle-color: radial-gradient(50% 50% at 50% 50%, #20178D 0%, #17124B 100%);
   --scrollbar-color:hsl(246, 44%, 8%);
 
@@ -135,12 +135,13 @@ ul{
 .sun-theme{ 
 
   --background: hsl(0, 0%, 100%);
+  --background-second:hsl(0, 0%, 100%);;
   --menu-text: hsl(0, 0%, 50%);
   --menu-color: hsl(0, 35%, 91%);
   --menu-color-hover: hsl(0, 0%, 0%);
   --title-color: hsl(0, 0%, 1%);
   --text-color: hsl(236, 7%, 48%); 
-  --button-color: hsl(236, 7%, 48%);
+  --buttom-color: hsl(243, 19%, 77%);
   --button-color-span: hsl(245, 59%, 42%);
   --text-btn-produts: hsl(0, 0%, 100%);
   --button-color-produts: hsl(245, 59%, 42%);
@@ -163,5 +164,28 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #362BA9;  
   border-radius: 1px;      
+}
+
+
+/*============ BUTTON SCROLL TOP =========================*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 30;
+  border: 1px solid #20178D;
+  border-radius: 3px;
+  background:#20178D;
+  padding: 0.355rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+
+.scrollup.show{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
