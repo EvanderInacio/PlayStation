@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="author" content="Evander Inácio"/>
+    <meta name="description" content="E-commerce Website PlayStation"/>
+    <link rel="canonical" href="https://playstation-4.vercel.app/">
+    <meta name="keywords" content="website, playstation, E-commerce"/>
+  
+    <meta name="theme-color" content="#09071c"/>
+    <meta name="copyright" content="https://www.evanderinacio.com/" />
+
+    <meta property="og:image" 
+    content="https://www.evanderinacio.com/assets/images/playstation.png"
+    />
+    
+    <meta property="og:title" content="PlayStation"/>
+    <meta property="og:description" content="E-commerce Website PlayStation"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://playstation-4.vercel.app/">
 
     <!------- CSS --------------->
     <link rel="stylesheet" href="../css/style.css">
@@ -56,58 +73,61 @@
     <main class="main">
       <section class="section contact grid" >
 
-        <span class="sub-title">ANSWERS WITHIN 24H</span>
-          <h2 class="section-title">Contact <span class="section-span">Us</span></h2>
+        <span class="sub-title sub-contact">ANSWERS WITHIN 24H</span>
+          <h2 class="section-title title-contact">Contact <span class="section-span">Us</span></h2>
         <div class="contact-container">
 
             <div class="content-descrition">
-              <h3>Get in touch</h3>
-              <p class="sub-description">We' love to hear from you. Our friendly team <br> is always here to chat.</p>
+              <h3 class="delaySmall">Get in touch</h3>
+              <p class="sub-description delayMedium">We' love to hear from you. Our friendly team <br> is always here to chat.</p>
 
               <div class="sub-content">
-                <h4> <i class="uil uil-envelope-add contact-button"></i> Chat to us</h4>
-                <p>Our friendly team is here to help.</p>
-                <a class="contact-link" href="mailto:email@playstation.com">email@playstation.com</a>
+                <h4 class="contact-title"> <i class="uil uil-envelope-add contact-button"></i> Chat to us</h4>
+                <p class="delaySmallBottom">Our friendly team is here to help.</p>
+                <a class="contact-link delayLargeBottom" href="mailto:email@playstation.com">email@playstation.com</a>
               </div>
 
               <div class="sub-content">
-                <h4> <i class="uil uil-location-point contact-button"></i> Office</h4>
-                <p>Come say hello at our office HQ.</p>
-                <span class="contact-link">100 Smith Street Collingwood VIC 3066 AU</span>
+                <h4 class="contact-title"> <i class="uil uil-location-point contact-button"></i> Office</h4>
+                <p class="delaySmallBottom">Come say hello at our office HQ.</p>
+                <span class="contact-link delayLargeBottom">100 Smith Street Collingwood VIC 3066 AU</span>
               </div>
 
               <div class="sub-content">
-                <h4> <i class="uil uil-phone-alt contact-button"></i> Chat to us</h4>
-                <p>Mon-Fri from 8am to 5pm.</p>
-                <a class="contact-link" href="tel:+1 (555) 000-0000">+1 (555) 000-0000</a>
+                <h4 class="contact-title"> <i class="uil uil-phone-alt contact-button"></i> Chat to us</h4>
+                <p class="delaySmallBottom">Mon-Fri from 8am to 5pm.</p>
+                <a class="contact-link delayLargeBottom" href="tel:+1 (555) 000-0000">+1 (555) 000-0000</a>
               </div>
               
               <div class="contact-social">
-                <a href="#"><i class="uil uil-github"></i></a> 
-                <a href="#"><i class="uil uil-instagram"></i></a>
-                <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                <a href="https://github.com/EvanderInacio"><i class="uil uil-github delaySmall"></i></a> 
+                <a href="#"><i class="uil uil-instagram delayMedium"></i></a>
+                <a href="https://www.linkedin.com/in/evander-inacio/"><i class="uil uil-linkedin-alt delayLarge"></i></a>
               </div>
 
             </div>
             <div class="container-form">
-              <h3 class="form-title">Level up your brand</h3>
-              <p class="form-description">You can reach us anytime via <span class="section-span">email@playstation.com</span></p>
+              <h3 class="form-title delayMedium">Level up your brand</h3>
+              <p class="form-description delayMediumBottom">You can reach us anytime via <span class="section-span">email@playstation.com</span></p>
 
-              <form action="" method="POST">
-                <div class="content-form">
+              <form action="https://formsubmit.co/evander.corinthiano@hotmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://playstation-4.vercel.app/assets/html/envio.html">
+
+                <div class="content-form delayMedium">
                   <label for="name">Name</label>
                   <input type="text" id="name" required placeholder="  Your name">
                 </div>
-                <div class="content-form">
+                <div class="content-form delayLarge">
                  <label for="email">Email</label>
                   <input type="email" id="email" required placeholder="  your@email.com">
                 </div>
-                <div class="content-form">
+                <div class="content-form delayLargeTopExtra">
                   <label for="mensage">Mensage</label>
                   <textarea name="mensage" id="mensage" cols="30" rows="5" placeholder="  What do your need?"></textarea>
                 </div>
                 <div class="content-form">
-                  <button class="button-form" type="submit">Send Mensage</button>
+                  <button class="button-form delayLargeTopExtra" type="submit">Send Mensage</button>
                 </div>
               </form>
             </div>
@@ -158,8 +178,12 @@
      <p class="copy">Copyright 2022 Playstation - All Rights Rleserved</p>
     </section>
   </footer>
-</body>
 
- <!------- JS --------------->
- <script src="../js/main.js"></script>
+
+  <!------- SCROLL REVEAL --------------->
+  <script src="https://unpkg.com/scrollreveal"></script>  
+  
+  <!------- JS --------------->
+  <script src="../js/main.js"></script>
+</body>
 </html>
