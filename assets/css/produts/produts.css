@@ -25,19 +25,20 @@
 .btn-produts a:hover {
   background: var(--buttom-color);
   border-color: var(--buttom-color);
-  color: var(--title-color);
+  color: blue;
 }
 
-.btn-borda a{
+.btn-produts .btn-borda a{
   border: 2px solid white;
   background: white;
   color: #362BA9;
+  cursor: pointer;
 }
 
-.btn-borda a:hover {
+.btn-produts .btn-borda a:hover {
   background: var(--buttom-color);
   border-color: var(--buttom-color);
-  color: var(--title-color);
+  color: blue;
 }
 
 /*======= CONTROL 2 ===========*/
@@ -113,6 +114,11 @@
   width: 19rem;
 }
 
+@media(max-width: 350px){
+  .control-1{
+     padding-left: 1rem;
+  }
+}
 
 @media (min-width: 768px){
 
