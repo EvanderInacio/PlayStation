@@ -47,6 +47,8 @@
 
 .btn-explore {
   color: var(--buttom-color);
+  font-weight: var(--font-medium);
+  font-family: var(--title-font);
   margin-left: 1rem;
 }
 
@@ -127,7 +129,7 @@
   left: -2rem;
   top: 0.5rem;
   width: 20px;
-  height: 2px;
+  height: 5px;
   background: var(--button-color-span);
   border-radius: 5px;
 }
@@ -147,6 +149,11 @@
 .button-about:hover {
   background: #5f52f1;
   border-color: #5f52f0;
+}
+
+.icone-animation:hover {
+  transition: .3s;
+  transform: translateY(-7px);
 }
 
 
@@ -180,6 +187,7 @@
 .card-content {
   display: grid;
   justify-items: center;
+  padding: 5rem 0;
 }
 
 .card-content h3 {
@@ -194,16 +202,22 @@
   border: 1px solid var(--card-border);
   background: var(--card-color);
   width: 15rem;
-  padding: 3rem 2rem;
-  border-radius: 56px;
+  padding: 4rem 2rem;
+  border-radius: 25px;
   margin-bottom: 25px;
   position: relative;
 }
 
 .card img,
 .card h3 {
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1);
 }
+
+.card-animation:hover {
+  transition: .4s;
+  transform: translateY(-10px);
+}
+
 
 .line-function {
   width: 80px;
@@ -221,7 +235,7 @@
   background: rgb(51, 41, 160);
   position: absolute;
   left: 9.5rem;
-  bottom: 2.3rem;
+  bottom: 3.3rem;
 }
 
 
@@ -258,7 +272,7 @@
   background: var(--controle-color);
   width: 16rem;
   height: 26rem;
-  border-radius: 26px;
+  border-radius: 10px;
   margin-bottom: 25px;
   text-align: center;
   position: relative;
@@ -278,16 +292,20 @@
   border-radius: 50%;
 }
 
-.top-card h5 {
+.card-title {
   font-weight: var(--font-semi-bold);
   font-family: var(--title-font);
   font-size: var(--h5-font-size);
   color: var(--title-color);
-  margin-top: var(--mb-1-5);
+  margin-top: var(--mb-1);
+}
+
+.ps5-control{
+  margin-top: 3rem;
 }
 
 .card-controle {
-  margin-top: -4rem;
+  margin-top: -3.5rem;
 }
 
 .estrela {
@@ -312,10 +330,17 @@
   font-size: var(--small-font-size);
 }
 
+.icon-cart{
+  font-size: 2.3rem;
+  position: absolute;
+  top: -.3rem;
+  left: 1rem;
+}
+
 .cart {
   width: 4rem;
   height: 3rem;
-  border: 1px solid #362ba9;
+  border: 1px solid #302a6f;
   border-radius: 5px;
   background: #302a6f;
   position: absolute;
@@ -323,13 +348,9 @@
   right: 0;
 }
 
-.cart img {
-  justify-content: center;
-  align-items: center;
-  width: 1.5rem;
-  position: absolute;
-  right: 1rem;
-  top: 0.5rem;
+.cart:hover {
+  background: #5f52f1;
+  border-color: #5f52f0;
 }
 
 
@@ -357,9 +378,10 @@
 }
 
 .faq-content{
-  border: 2px solid var(--card-color);
+  border: 2px solid var(--card-border);
   border-radius: 25px;
   padding: 1.5rem 0;
+  background: var(--background-second);
 }
 
 .hr-line{
@@ -638,7 +660,7 @@
   }
 
   .top-card h5{
-    font-size: var(--normal-font-size);
+    font-size: var(--h5-font-size);
   }
 
   .estrela p{
@@ -648,7 +670,8 @@
   }
 
   .top-money{
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
   }
 
 }
@@ -737,6 +760,10 @@
     font-size: 1rem;
   }
 
+  .about-list li::before {
+    top: 0.7rem;
+  }
+  
   .about-list {
     font-size: 1rem;
     font-weight: var(--font-semi-bold);
