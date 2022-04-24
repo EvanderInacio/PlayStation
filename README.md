@@ -23,6 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Google Fonts](https://fonts.google.com/)
 - [ScrollReveal](https://scrollrevealjs.org/)
+- [FORMSUBMIT](https://formsubmit.co/)
 
 ## 💻 Autor<br>
 <table>
