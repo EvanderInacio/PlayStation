@@ -26,7 +26,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [ScrollReveal](https://scrollrevealjs.org/)
 - [FORMSUBMIT](https://formsubmit.co/)
 
-<br>
 
 ## 🔗 Links
 
