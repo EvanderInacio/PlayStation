@@ -33,29 +33,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Google Fonts](https://fonts.google.com/)
 - [ScrollReveal](https://scrollrevealjs.org/)
 - [FORMSUBMIT](https://formsubmit.co/)
-
-
-## 🔗 Links
-
-<p align="left">
- 
-  <a href="https://www.linkedin.com/in/evander-inacio" alt="Linkedin">
-  <img src="https://img.shields.io/badge/-Linkedin-000?style=for-the-badge&logo=Linkedin&logoColor=0A66C2&link=https://www.linkedin.com/in/evander-inacio"/> 
- </a>
-  
- <a href="https://www.facebook.com/evandder.lopes" alt="Facebook">
-  <img src="https://img.shields.io/badge/-Facebook-000?style=for-the-badge&logo=Facebook&logoColor=000dff&link=https://www.facebook.com/evandder.lopes"/> 
- </a>
-  
- <a href="https://twitter.com/Evander_Inacio" alt="Twitter">
-  <img src="https://img.shields.io/badge/-Twitter-000?style=for-the-badge&logo=Twitter&logoColor=1DA1F2&link=https://twitter.com/Evander_Inacio"/> 
- </a>
-
- <a href="https://evander.vercel.app" alt="Portfolio">
-  <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=FFF&link=https://www.evanderinacio.com/"/>
- </a>
-
- </p>
  
 ## 💻 Autor<br>
 <table>
